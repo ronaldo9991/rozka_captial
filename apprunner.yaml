@@ -1,0 +1,36 @@
+version: 1.0
+runtime: nodejs20
+
+# Full-stack monorepo build configuration
+build:
+  commands:
+    build:
+      - echo "🚀 Building full-stack monorepo application..."
+      - echo "📦 Installing dependencies..."
+      - npm ci
+      - echo "🔨 Building frontend (React/Vite)..."
+      - npm run build:frontend
+      - echo "🔨 Building backend (Express/TypeScript)..."
+      - npm run build:backend
+      - echo "🗄️ Initializing database schema..."
+      - npm run db:push || echo "⚠️ Schema already initialized or drizzle-kit not available"
+      - echo "✅ Build complete!"
+
+# Production runtime configuration
+run:
+  runtime-version: 20
+  command: npm start
+  network:
+    port: 5000
+    env: PORT
+  env:
+    - name: NODE_ENV
+      value: production
+    - name: PORT
+      value: "5000"
+    # Add your environment variables here:
+    # - name: SESSION_SECRET
+    #   value: "your-session-secret-here"
+    # - name: DATABASE_URL
+    #   value: "your-database-url-here"
+

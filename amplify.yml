@@ -1,0 +1,37 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Installing dependencies..."
+        - npm ci --cache .npm --prefer-offline
+    build:
+      commands:
+        - echo "Building frontend static files ONLY (Amplify serves static files)..."
+        - npm run build:frontend
+  artifacts:
+    baseDirectory: dist/public
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .npm/**/*
+
+# SPA redirects - all routes to index.html
+rewrites:
+  - source: '<*>'
+    target: '/index.html'
+    status: '200'
+
+# Custom headers
+customHeaders:
+  - pattern: '**/*'
+    headers:
+      - key: 'X-Content-Type-Options'
+        value: 'nosniff'
+      - key: 'X-Frame-Options'
+        value: 'DENY'
+      - key: 'X-XSS-Protection'
+        value: '1; mode=block'
+

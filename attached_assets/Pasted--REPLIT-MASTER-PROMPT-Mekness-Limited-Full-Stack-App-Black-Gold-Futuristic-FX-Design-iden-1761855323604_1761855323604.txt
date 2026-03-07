@@ -1,0 +1,244 @@
+🟡 REPLIT MASTER PROMPT — Mekness Limited: Full-Stack App (Black & Gold, Futuristic FX Design)
+<identity> You are **Replit Assistant**, a full-stack AI engineer and UI/UX designer. Your task: build a **next-generation forex platform** called **Mekness Limited**, designed with **luxury black + gold branding**, **golden ratio layouts**, and **Framer Motion animations** for a **futuristic trading feel**. </identity>
+🎯 Objective
+
+Develop a full-stack web app that includes:
+
+Landing pages (public) — Home, About, Contact
+
+Auth system — Sign In, Sign Up
+
+Authenticated dashboard — better than mekness.com UI, with futuristic design and rich UX.
+
+Complete backend — Node.js + Express + Prisma (SQLite dev, Postgres-ready).
+
+Responsive, animated, elegant — works on mobile, tablet, desktop.
+
+⚙️ Tech Stack
+
+Frontend: React + Vite + TypeScript + TailwindCSS + shadcn/ui + Framer Motion + React Router
+
+Backend: Node.js + Express + TypeScript + Prisma ORM
+
+Database: SQLite for Replit (Postgres ready)
+
+Auth: bcrypt + JWT (HTTP-only cookies)
+
+Validation: Zod + React Hook Form
+
+State: TanStack Query
+
+Testing: Vitest / Jest
+
+Email: Nodemailer JSON transport (stub)
+
+3D Elements: react-three-fiber and drei (for glowing 3D charts and spheres)
+
+🎨 Design System — “Mekness Black-Gold Identity”
+Element	Color	Code
+Primary Gold	Metallic Gold	#D4AF37
+Primary Dark	Pure Black	#000000
+Text Primary	Off-White	#F5F5F5
+Accent	Charcoal	#111111
+Border	Graphite Gray	#2B2B2B
+Success	Emerald	#10B981
+Error	Crimson	#EF4444
+
+Font: “Inter” + “Poppins” blend for premium modern aesthetic.
+Style Keywords: Futuristic, Metallic, Floating Layers, Depth, Clean Typography, Golden Ratio Grids.
+
+✨ Animations & Ratios
+
+Framer Motion: hero text fade-up + cards float-in (delay stagger 0.15s).
+
+Scroll Reveal: sections slide from bottom (30px offset, 0.8s easing).
+
+Hover Motion: subtle 3D tilt and glow.
+
+Golden Ratio Grid: 1.618 column ratios; hero split 62% visual / 38% text.
+
+Hero 3D Elements: rotating gold spheres, glowing candlestick bars, abstract trading line chart (Three.js).
+
+📱 Responsiveness
+
+Mobile-first design, Tailwind breakpoints:
+
+sm: 360px → stacked
+
+md: 768px → side-by-side
+
+lg: 1024px → full layout
+
+Use clamp() for font scaling.
+
+Nav collapses to drawer on small screens with animated slide-in.
+
+🏠 HOME PAGE (Hero-Focused)
+
+Path: /
+
+HERO SECTION (KEY AREA)
+
+Full viewport height, black base with animated 3D glowing gold particle field behind.
+
+Left side:
+
+Headline (Framer fade-in):
+“Trade Beyond Borders. Trade Mekness.”
+
+Subtext:
+“Empowering traders with precision, speed, and transparency.”
+
+CTA Buttons:
+
+“Open Live Account” → /signin
+
+“Try Demo” → /signin?demo=true
+
+Right side:
+
+Animated 3D forex chart: floating golden line graph looping slowly
+
+Hover interaction (camera parallax with pointer)
+
+FEATURES SECTION
+
+3 floating cards (Framer hover lift + shadow glow):
+
+Ultra-Low Spreads
+
+Instant Execution
+
+24×5 Support
+
+Each card uses gold border with black inner glass panel.
+
+LIVE STATS SECTION
+
+Gold glowing ticker: “EUR/USD 1.0834 ▲0.12% | XAU/USD 2356.32 ▲0.45%” (scrolling marquee style)
+
+CTA STRIP
+
+Gold gradient bar → “Start Trading with Mekness Today” + button → /signin
+
+FOOTER
+
+Compact grid: logo, contact info, legal disclaimers.
+
+🏢 ABOUT PAGE (/about)
+
+Company story with Framer scroll-in animation.
+
+Timeline (gold milestones)
+
+Compliance section + license logos in grayscale glow effect.
+
+📞 CONTACT PAGE (/contact)
+
+Glass card form:
+
+Name, Email, Topic, Message
+
+Gold submit button with success toast
+
+Subtle top shadow gradient
+
+🔑 SIGN IN / SIGN UP
+
+Centered card on dark background, gold glowing logo on top.
+
+Framer fade-in on load.
+
+On submit → JWT cookie → redirect /dashboard.
+
+📊 DASHBOARD (Better Than Mekness.com)
+
+Path: /dashboard
+
+GLOBAL LAYOUT
+
+Sidebar: glass black background with animated gold border hover
+
+Top Bar:
+
+User menu (avatar, email)
+
+Sign Out
+
+Real-time clock
+
+Background: layered moving gradient with depth blur (luxury finish)
+
+Dashboard body uses golden ratio layout for clean spacing.
+
+MAIN PAGE CONTENT
+
+Top row cards (animated with Framer scale-in):
+
+Balance, Equity, Margin, P/L
+
+Each card glows faint gold when hovered.
+
+Quick Actions Section
+
+“Open Account”, “Deposit Funds”, “Withdraw”, “Support Ticket”
+
+Modal dialogs with smooth spring motion open/close.
+
+Accounts Table
+
+Gold header lines, hover-highlight rows.
+
+Columns: ID, Type, Leverage, Created At, Status Badge.
+
+Mini Chart Widget
+
+3D candlestick micro-chart using react-three-fiber (rotating gently).
+
+Documents / Deposits / Tickets
+
+Dedicated tabs with animated transitions.
+
+File upload modal (drag-drop) with progress bar.
+
+Status indicator: gold = verified, gray = pending, red = rejected.
+
+🧠 BACKEND (Express + Prisma)
+
+Same as earlier spec:
+
+Auth (JWT), Accounts, Deposits, Tickets, Documents, Contact routes.
+
+Prisma schema (User, Account, Ticket, Deposit, Document, ContactMessage).
+
+Protect routes with authRequired.
+
+CORS + Helmet + centralized error handler.
+
+🧪 SEED DATA
+admin@mekness.com / Passw0rd!
+
+
+Creates demo accounts, deposits, tickets, documents.
+
+⚡ REPLIT RUN CONFIG
+
+.replit
+
+run="npm install && npx prisma migrate dev --name init && npm run seed && concurrently \"npm run --prefix apps/api dev\" \"npm run --prefix apps/web dev\""
+
+✅ ACCEPTANCE CRITERIA
+
+Landing page feels futuristic, luxurious, alive.
+
+3D hero elements respond to cursor.
+
+Framer Motion animations are smooth (60fps).
+
+Fully responsive (mobile to 4K).
+
+Dashboard layout beats mekness.com visually — depth, spacing, contrast, animation.
+
+Authentication and dashboard features functional.
+
+One-click Replit launch success.

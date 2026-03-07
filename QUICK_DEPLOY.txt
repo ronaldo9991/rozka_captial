@@ -1,0 +1,34 @@
+========================================
+QUICK DEPLOYMENT - Copy & Paste These Commands
+========================================
+
+Password: hY>pWH|11~7E4E
+Server: root@67.227.198.100
+
+========================================
+STEP 1: UPLOAD (PowerShell - Run one by one)
+========================================
+
+cd "d:\Project\Mekness Project"
+scp -r dist root@67.227.198.100:/var/www/html/new.mekness.com/
+scp package.json root@67.227.198.100:/var/www/html/new.mekness.com/
+scp package-lock.json root@67.227.198.100:/var/www/html/new.mekness.com/
+
+(Enter password: hY>pWH|11~7E4E when prompted for each)
+
+========================================
+STEP 2: DEPLOY (SSH - Run this)
+========================================
+
+ssh root@67.227.198.100
+
+(Enter password: hY>pWH|11~7E4E)
+
+Then run these commands on server:
+cd /var/www/html/new.mekness.com/
+npm ci --production
+pm2 restart mekness-app
+pm2 status
+exit
+
+========================================

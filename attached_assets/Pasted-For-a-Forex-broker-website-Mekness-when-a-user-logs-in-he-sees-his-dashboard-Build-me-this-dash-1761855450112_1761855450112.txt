@@ -1,0 +1,130 @@
+For a Forex broker website "Mekness", when a user logs in he sees his dashboard.
+
+Build me this dashboard and build pages I will tell you.
+
+Technology: No frameworks. Only give me 1 .html file
+Logo is attached for color branding purposes.
+
+You are allowed to add more things if you want to make the website better.
+
+---
+
+Page: Home page should have following features:
+
+4 card boxes each one will have a button that are: Open Live Account, Deposit Now, Open Demo Account, Create New Ticket
+A table that shows trading accounts with columns: ID, Account ID, Type, Leverage, Created At
+A card in that shows the phone number off "Account Department"
+
+Page 2: Documents
+
+This page has a table that shows list of uploaded documents.
+
+A table with pagination will show following column: ID, Type, Document, Status, Uploaded On, Action, Reason
+
+Page: Trading Accounts
+
+This page manages trading accounts for a user.
+
+Card 1: Request New Trading Account
+Dropdown box 1: Account Type
+Dropdown box 1 options: Live, Demo
+Dropdown box 2: Live Account Type
+Dropdown box 2: options: Standard, Pro, VIP, Startup
+Button: Get Trading Account
+
+Card 2: Live Accounts
+A table with pagination with following columns: ID, Account ID, Password, Type, Group, Leverage, Created At, Action
+Action column data should have "Change Password" button
+Leverage column data should have a clickable button that allows you to change the leverage of forex trading account
+
+Card 3: Demo Accounts
+Same feature as card 2 "Live Accounts"
+
+Card 4: No Deposit Bonus Account
+Same feature as card 2 "Live Accounts"
+
+Page 4: Rewards
+A table with pagination that shows data for following columns: Account ID, Rewarded Month & Year, Net Deposit, Reward Amount, Rewarded Date & Time
+
+Page 5: IB Rewards
+Same feature and table as page 4 "Rewards" page.
+
+Page 6: IB Details
+
+Card 1: Select Date Range
+Date Picker 1: Start Date
+Date Picker 2: End Date
+Button 1: Submit
+Statistic in Card 1: Total Users
+Statistic in Card 2: Total Accounts
+Statistic in Card 3: Deposits
+Statistic in Card 4: Withdrawals
+Statistic in Card 5: Internal Transfers
+Statistic in Card 6: External Transfers
+
+Card 2: Your IB Account
+Table with Pagination with following columns: ID, Account ID, Password, Type, Created At, Referral Link, Status, Action
+
+Card 3: Your Referral Clients
+Table with Pagination with following columns: ID, Client Name, Email, Requested at
+
+Card 4: IB IC Wallets
+Table with Pagination with following columns: ID, Account ID, Trading Account, Balance, Created At, Updated At, Last Deduction At, Action
+
+Page 7: Champion Contests
+
+Card 1: Champion Status
+Notification Text: The competition has started so you can't register new accounts.
+
+Card 2: Champion Contest Accounts
+Table with pagination with following columns: ID, Account ID, Balance, Password, Type, Group, Leverage, Created at, Action
+
+Card 3: All Champion Contest Participants
+Table with pagination with following columns: Positions, Account ID, Balance, Username, Created at
+
+Page 8: No Deposit Bonus Accounts
+
+Card 1: Manage No Deposit Bonus Accounts
+Button 1: Create New One
+
+Card 2: No Deposit Bonus Accounts
+Table with pagination with following columns: ID, Account ID, Balance, Password, Type, Group, Leverage, Created at, Action
+
+Card 3: Terms and Conditions for $50 No Deposit Bonus
+Paragraph 1: All the terms and conditions here
+
+Page 9: Deposit
+
+Card 1: Deposit
+Dropdown 1: Select Trading Account
+Dropdown 2: Select Merchant
+Input Box: Enter Amount to be Deposited
+Button:  Proceed to Deposit
+
+Card 2: Your Deposits
+Table with pagination with following columns: ID, Account, Merchant, Amount, Deposit Date & Time, Status	
+
+Page 10: Internal Funds Transfer
+Card 1: Funds Transfer Details
+Dropdown 1: Select Trading Account (Transfer Funds From)
+Dropdown 2: Select Trading Account (Transfer Funds To)
+Input Box: Enter Amount to be Transferred
+Button:  Proceed to Transfer
+
+Card 2: Your Transfers
+Table with pagination with following columns: ID, Transaction ID, Amount ,Source, Destination, Date & Time, Status
+
+Page 11: External Funds Transfer
+Card 1: External Funds Transfer
+Heading: External Transfer Fee Charges 2.5%
+Dropdown 1: Select Trading Account (Transfer Funds From)
+Input Box 1: Enter Amount to be Transferred
+Input Box 2: Enter Trading Account (Send Funds To)
+Dropdown 2: Select OTP Verification Method
+Button:  Proceed to Transfer
+
+Card 2: Your Transfers
+Table with pagination with following columns: ID, Transaction ID, Amount, Source, Destination, Date & Time, Status
+
+---
+There are more pages such as: IB Details, Champion Contest, No Deposit Bonus Accounts, Deposits, Transfer Funds, Withdrawals, Support Tickets, Downloads, Personal Setting, Log Out

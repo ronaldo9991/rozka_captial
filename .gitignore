@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+.local/
+.env
+WEB3_REFINEMENT_SUMMARY.md
