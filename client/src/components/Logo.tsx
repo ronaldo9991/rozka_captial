@@ -32,9 +32,10 @@ export default function Logo({
       </div>
       {showText && (
         <span
-          className={`font-serif font-bold ${textSizeMap[size]} text-foreground`}
+          className={`font-serif font-bold ${textSizeMap[size]} text-[#D4AF37] uppercase tracking-wider`}
+          style={{ color: '#D4AF37' }}
         >
-          Binofox
+          BINOFOX
         </span>
       )}
     </div>

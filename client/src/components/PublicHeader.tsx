@@ -29,7 +29,7 @@ export default function PublicHeader() {
     forexLinks.some((link) => location.startsWith(link.href));
 
   const navLinkBase =
-    "text-foreground hover:text-primary transition-all duration-300 font-medium text-[15px] relative group py-2";
+    "text-foreground/90 hover:text-primary transition-all duration-300 font-medium text-[15px] relative group py-2 px-1 rounded-lg hover:bg-primary/10";
 
   // Handle dropdown with delay to prevent accidental closes
   const handleMouseEnter = () => {
@@ -60,14 +60,13 @@ export default function PublicHeader() {
     <header className="fixed top-0 left-0 right-0 z-[100] safe-area-top">
       <div className="w-full">
         <div 
-          className="bg-black/80 backdrop-blur-[24px] backdrop-saturate-[200%]"
+          className="bg-gradient-to-r from-black/95 via-black/90 to-black/95 backdrop-blur-[24px] backdrop-saturate-[200%] border-b border-primary/20"
           style={{ 
-            border: 'none',
-            boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.05)',
+            boxShadow: '0 4px 24px 0 rgba(0, 0, 0, 0.4), inset 0 1px 0 0 rgba(255, 255, 255, 0.1)',
             paddingTop: 'env(safe-area-inset-top)'
           }}
         >
-          <div className="container mx-auto max-w-[1280px] flex items-center justify-between h-24 px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16">
+          <div className="container mx-auto max-w-[1280px] flex items-center justify-between h-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Logo size="lg" />
@@ -136,8 +135,7 @@ export default function PublicHeader() {
                   {/* Dropdown Menu */}
                   {forexDropdownOpen && (
                     <div 
-                      className="absolute top-full left-0 mt-1 w-72 bg-black/70 backdrop-blur-[24px] backdrop-saturate-[200%] rounded-lg py-2 z-50"
-                      style={{ border: 'none' }}
+                      className="absolute top-full left-0 mt-2 w-80 bg-gradient-to-br from-black/95 to-black/90 backdrop-blur-[24px] backdrop-saturate-[200%] rounded-xl py-2 z-50 border border-primary/20 shadow-2xl"
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
                     >
@@ -171,12 +169,12 @@ export default function PublicHeader() {
               </nav>
 
           {/* Desktop CTA Buttons */}
-          <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
+          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
             <Link href="/signin">
               <Button 
                 variant="ghost" 
                 size="sm"
-                className="text-foreground hover:text-primary hover:bg-primary/10 h-9 px-5 text-[13px] font-medium" 
+                className="text-foreground/80 hover:text-primary hover:bg-primary/15 h-10 px-6 text-[14px] font-medium border border-primary/20 hover:border-primary/40 rounded-lg transition-all duration-300" 
                 data-testid="button-signin"
               >
                 Sign In
@@ -185,7 +183,7 @@ export default function PublicHeader() {
             <Link href="/signup">
               <Button 
                 size="sm"
-                className="neon-gold magnetic-hover h-9 px-5 text-[13px] font-semibold" 
+                className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-black font-semibold h-10 px-6 text-[14px] rounded-lg shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105" 
                 data-testid="button-signup"
               >
                 Sign Up
@@ -196,10 +194,10 @@ export default function PublicHeader() {
           {/* Mobile Menu Button - Always Visible and Clickable */}
           <button
             type="button"
-            className="lg:hidden p-2 hover:bg-primary/10 rounded-lg transition-all duration-300 ease-in-out relative flex-shrink-0 cursor-pointer touch-manipulation active:scale-95 z-[120] pointer-events-auto"
+            className="lg:hidden p-3 hover:bg-primary/15 rounded-xl transition-all duration-300 ease-in-out relative flex-shrink-0 cursor-pointer touch-manipulation active:scale-95 z-[120] pointer-events-auto border border-primary/20 hover:border-primary/40"
             onClick={(e) => {
-              e.stopPropagation();        // prevent the click from bubbling to the overlay
-              e.preventDefault();         // prevent any default behavior
+              e.stopPropagation();
+              e.preventDefault();
               setMobileMenuOpen(!mobileMenuOpen);
             }}
             data-testid="button-mobile-menu"
