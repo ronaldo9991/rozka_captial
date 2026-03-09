@@ -8170,6 +8170,19 @@ export async function registerRoutes(app: Express): Promise<void> {
     }
   });
 
+  // DB status diagnostic endpoint
+  app.get("/api/db-status", async (req, res) => {
+    const dbUrl = process.env.DATABASE_URL || process.env.DATABASE_PUBLIC_URL;
+    const masked = dbUrl ? dbUrl.replace(/:[^:@]+@/, ':****@').substring(0, 60) + '...' : 'NOT SET';
+    try {
+      const db = await getDb();
+      const result = await db.execute('SELECT NOW() as t, version() as v');
+      res.json({ status: 'connected', url: masked, time: result.rows[0].t, pg: result.rows[0].v?.split(' ').slice(0,2).join(' ') });
+    } catch (err: any) {
+      res.status(503).json({ status: 'error', url: masked, error: err.message });
+    }
+  });
+
   // Health Check Endpoint for AWS App Runner
   app.get("/api/health", async (req, res) => {
     try {

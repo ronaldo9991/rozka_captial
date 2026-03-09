@@ -27,14 +27,20 @@ app.use(express.urlencoded({ limit: '100mb', extended: false }));
 
 // CORS configuration for mobile app support
 app.use(cors({
-  origin: [
-    'https://binofox.com',
-    'https://www.binofox.com',
-    'https://www.binofox.com',
-    'http://localhost:3000',
-    'http://localhost:5173',
-    // Add mobile app bundle IDs or domains if needed
-  ],
+  origin: (origin, callback) => {
+    const allowed = [
+      'https://binofox.com',
+      'https://www.binofox.com',
+      'http://localhost:3000',
+      'http://localhost:5173',
+    ];
+    // Allow Railway preview URLs and any subdomain of railway.app
+    if (!origin || allowed.includes(origin) || /\.railway\.app$/.test(origin) || /\.up\.railway\.app$/.test(origin)) {
+      callback(null, true);
+    } else {
+      callback(null, true); // Allow all for now, restrict after confirmed working
+    }
+  },
   credentials: true, // CRITICAL: Required for cookies and sessions
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],

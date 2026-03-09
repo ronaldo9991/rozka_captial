@@ -57,10 +57,11 @@ async function initDatabase() {
   // Parse SSL requirement from connection string
   // AWS RDS requires SSL, Railway external connections need SSL
   const isAWSRDS = connectionString.includes('.rds.amazonaws.com');
-  const isRailway = connectionString.includes('shuttle.proxy.rlwy.net') || 
-                    connectionString.includes('railway.internal');
+  const isRailwayExternal = connectionString.includes('rlwy.net');
+  const isRailwayInternal = connectionString.includes('railway.internal');
+  const isRailway = isRailwayExternal || isRailwayInternal;
   const needsSSL = connectionString.includes('sslmode=require') || 
-                   connectionString.includes('shuttle.proxy.rlwy.net') ||
+                   isRailwayExternal ||
                    isAWSRDS;
   
   const sslConfig = needsSSL 
