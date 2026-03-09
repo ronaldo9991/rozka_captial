@@ -28,9 +28,38 @@ run:
       value: production
     - name: PORT
       value: "5000"
-    # Add your environment variables here:
-    # - name: SESSION_SECRET
-    #   value: "your-session-secret-here"
-    # - name: DATABASE_URL
-    #   value: "your-database-url-here"
+    # Database Configuration for AWS RDS PostgreSQL
+    - name: DATABASE_URL
+      value: "postgresql://username:password@database-1.ckzyy4eccgqg.us-east-1.rds.amazonaws.com:5432/database_name?sslmode=require"
+    # Session Configuration
+    - name: SESSION_SECRET
+      value: "binofox-production-session-secret-2025"
+    # Frontend URL (update with your App Runner URL)
+    - name: FRONTEND_URL
+      value: "https://your-app-service.us-east-1.awsapprunner.com"
+    # Stripe Configuration (optional)
+    - name: STRIPE_SECRET_KEY
+      value: "sk_live_your_stripe_secret_key_here"
+    - name: STRIPE_PUBLISHABLE_KEY
+      value: "pk_live_your_stripe_publishable_key_here"
+    - name: VITE_STRIPE_PUBLISHABLE_KEY
+      value: "pk_live_your_stripe_publishable_key_here"
+
+# Health check configuration for AWS App Runner
+health-check:
+  path: /api/health
+  interval: 30
+  timeout: 5
+  healthy-threshold: 2
+  unhealthy-threshold: 3
+
+# Auto-scaling configuration
+auto-scaling:
+  min-size: 1
+  max-size: 10
+  target-cpu-utilization: 70
+
+# Security
+security:
+  iam-role: arn:aws:iam::ACCOUNT-ID:role/AppRunnerECRAccessRole
 
