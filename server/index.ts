@@ -172,6 +172,16 @@ async function bootstrap(): Promise<{ app: express.Express; server: Server }> {
   await registerRoutes(app);
   const httpServer = createServer(app);
 
+  // Add root health check for Railway
+  app.get('/', (req, res) => {
+    res.json({
+      status: 'ok',
+      timestamp: new Date().toISOString(),
+      service: 'Binofox Trading Platform',
+      environment: process.env.NODE_ENV || 'production'
+    });
+  });
+
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
