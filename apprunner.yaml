@@ -1,17 +1,10 @@
 version: 1.0
 runtime: nodejs20
 
-# Minimal build configuration
-build:
-  commands:
-    - echo "🚀 Building application..."
-    - npm ci
-    - echo "✅ Build complete!"
-
-# Minimal runtime configuration
+# No build step - just run directly
 run:
   runtime-version: 20
-  command: node -e "const http = require('http'); const server = http.createServer((req, res) => { res.writeHead(200, {'Content-Type': 'application/json'}); if (req.url === '/api/health') { res.end(JSON.stringify({status: 'healthy', timestamp: new Date().toISOString(), platform: 'AWS App Runner', message: 'Binofox API is running'})); } else { res.end(JSON.stringify({message: 'Binofox Trading Platform', status: 'running', url: req.url})); } }); server.listen(8080, '0.0.0.0', () => console.log('✅ Server running on port 8080'));"
+  command: node -e "console.log('=== DEBUG START ==='); console.log('Node version:', process.version); console.log('Platform:', process.platform); console.log('Architecture:', process.arch); console.log('Environment:', JSON.stringify(process.env, null, 2)); console.log('=== CREATING SERVER ==='); const http = require('http'); const server = http.createServer((req, res) => { console.log('Request received:', req.method, req.url); res.writeHead(200, {'Content-Type': 'application/json'}); if (req.url === '/api/health') { res.end(JSON.stringify({status: 'healthy', timestamp: new Date().toISOString(), debug: {node: process.version, platform: process.platform}})); } else { res.end(JSON.stringify({message: 'Binofox API', status: 'running'})); } }); server.on('error', (err) => { console.error('Server error:', err); process.exit(1); }); server.listen(8080, '0.0.0.0', () => { console.log('=== SERVER STARTED SUCCESSFULLY ==='); console.log('Listening on port 8080'); console.log('=== READY FOR REQUESTS ==='); });"
   network:
     port: 8080
 
