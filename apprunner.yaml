@@ -26,22 +26,15 @@ run:
       value: production
     - name: PORT
       value: "8080"
-    # Database Configuration - Replace with actual values in App Runner Console
-    - name: DATABASE_URL
-      value: "postgresql://postgres:postgres@localhost:5432/binofox"
     # Session Configuration
     - name: SESSION_SECRET
       value: "binofox-production-session-secret-2025"
-    # Frontend URL - Update with your App Runner URL
+    # Frontend URL - Update with your App Runner URL after deployment
     - name: FRONTEND_URL
       value: "https://your-app-service.us-east-1.awsapprunner.com"
-    # Stripe Configuration (optional - can be left as is for now)
-    - name: STRIPE_SECRET_KEY
-      value: "sk_test_placeholder"
-    - name: STRIPE_PUBLISHABLE_KEY
-      value: "pk_test_placeholder"
-    - name: VITE_STRIPE_PUBLISHABLE_KEY
-      value: "pk_test_placeholder"
+    # Optional: Add other variables as needed
+    - name: SKIP_DATABASE
+      value: "true"
 
 # Health check configuration for AWS App Runner
 health-check:

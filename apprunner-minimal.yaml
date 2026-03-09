@@ -1,0 +1,16 @@
+version: 1.0
+runtime: nodejs20
+
+# Simple build configuration
+build:
+  commands:
+    - echo "🚀 Building application..."
+    - npm ci
+    - echo "✅ Build complete!"
+
+# Simple runtime configuration
+run:
+  runtime-version: 20
+  command: node -e "const http = require('http'); const server = http.createServer((req, res) => { res.writeHead(200, {'Content-Type': 'application/json'}); res.end(JSON.stringify({status: 'healthy', message: 'Binofox API is running'})); }); server.listen(8080, '0.0.0.0', () => console.log('Server running on port 8080'));"
+  network:
+    port: 8080

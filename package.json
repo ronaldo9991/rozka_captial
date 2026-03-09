@@ -11,6 +11,7 @@
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "start:apprunner": "node server/start-simple.js",
     "start:full": "node server/start-apprunner.js",
+    "start:debug": "node server/debug-start.js",
     "check": "tsc",
     "test": "vitest",
     "test:ui": "vitest --ui",

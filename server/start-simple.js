@@ -29,12 +29,17 @@ const startServer = async () => {
         environment: process.env.NODE_ENV,
         platform: 'AWS App Runner',
         database: {
-          status: 'not_configured',
-          type: 'PostgreSQL'
+          status: process.env.SKIP_DATABASE === 'true' ? 'disabled' : 'not_configured',
+          type: 'PostgreSQL',
+          note: 'Database connection skipped for initial deployment'
         },
         version: {
           app: '1.0.0',
           node: process.version
+        },
+        deployment: {
+          mode: 'simple_startup',
+          reason: 'database_disabled_for_initial_deployment'
         }
       });
     });
@@ -44,7 +49,38 @@ const startServer = async () => {
       res.json({
         message: 'Binofox Trading Platform',
         status: 'running',
-        environment: process.env.NODE_ENV
+        environment: process.env.NODE_ENV,
+        version: '1.0.0',
+        database: process.env.SKIP_DATABASE === 'true' ? 'disabled' : 'not_configured'
+      });
+    });
+    
+    // Basic API endpoints for testing
+    app.get('/api/status', (req, res) => {
+      res.json({
+        status: 'operational',
+        timestamp: new Date().toISOString(),
+        services: {
+          api: 'running',
+          database: process.env.SKIP_DATABASE === 'true' ? 'disabled' : 'not_configured',
+          authentication: 'basic_mode'
+        }
+      });
+    });
+    
+    app.get('/api/info', (req, res) => {
+      res.json({
+        platform: 'Binofox Trading Platform',
+        version: '1.0.0',
+        environment: process.env.NODE_ENV,
+        deployment: 'AWS App Runner',
+        features: {
+          database: false,
+          authentication: false,
+          trading: false,
+          admin_panel: false
+        },
+        note: 'Running in minimal mode - database and features disabled'
       });
     });
     
