@@ -58,7 +58,7 @@ export default function NoDepositBonus() {
     {
       step: "1",
       title: "Register Account",
-      description: "Sign up for a new Binofox trading account. Complete the registration form with accurate information."
+      description: "Sign up for a new Rozka Capitals trading account. Complete the registration form with accurate information."
     },
     {
       step: "2",
@@ -296,7 +296,7 @@ export default function NoDepositBonus() {
                       • Maximum leverage on no deposit bonus accounts is 1:100. Standard account terms apply.
                     </p>
                     <p>
-                      • Binofox reserves the right to cancel bonus for terms violations, abusive trading, or duplicate accounts.
+                      • Rozka Capitals reserves the right to cancel bonus for terms violations, abusive trading, or duplicate accounts.
                     </p>
                   </div>
                 </div>

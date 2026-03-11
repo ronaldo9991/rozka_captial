@@ -107,7 +107,7 @@ export default function Home() {
     {
       name: "Sarah Mitchell",
       role: "Professional Trader",
-      content: "The execution speed is incredible. I've been trading for 10 years and Binofox has the best platform I've used.",
+      content: "The execution speed is incredible. I've been trading for 10 years and Rozka Capitals has the best platform I've used.",
       rating: 5,
     },
     {
@@ -143,11 +143,11 @@ export default function Home() {
       <PublicHeader />
       
       {/* Enhanced Hero - dYdX Inspired with Web3/Web4 Style */}
-      <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden" style={{ paddingTop: 'clamp(5rem, 8vh, 7rem)', paddingBottom: 'clamp(3rem, 6vh, 4rem)' }}>
+      <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden" style={{ paddingTop: 'clamp(3.5rem, 5vh, 4.5rem)', paddingBottom: 'clamp(2.5rem, 5vh, 3.5rem)' }}>
         {/* Base gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-black via-background to-black"></div>
         
-        {/* Background Video - Binofox */}
+        {/* Background Video - Rozka Capitals */}
         <div className="absolute inset-0 w-full h-full">
           <video
             autoPlay
@@ -469,7 +469,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <span>Trade Beyond Borders.</span>
-                <span className="text-gradient-gold text-glow-gold">Trade Binofox.</span>
+                <span className="text-gradient-gold text-glow-gold">Trade Rozka Capitals.</span>
               </motion.h1>
               
               {/* Description - Optimized Size for Scroll Button Visibility */}
@@ -668,7 +668,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Why Choose Binofox */}
+      {/* Why Choose Rozka Capitals */}
       <div className="pt-12 md:pt-16 pb-20 md:pb-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
         <div className="container mx-auto max-w-[1280px]">
           <motion.div
@@ -678,7 +678,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
-              Why Choose <span className="text-gradient-gold text-glow-gold inline-block pb-2">Binofox</span>
+              Why Choose <span className="text-gradient-gold text-glow-gold inline-block pb-2">Rozka Capitals</span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
               Join the world's most advanced forex trading platform trusted by professionals worldwide.

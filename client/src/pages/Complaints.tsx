@@ -84,7 +84,7 @@ export default function Complaints() {
               </div>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-              Binofox <span className="text-gradient-gold text-glow-gold">Complaints</span>
+              Rozka Capitals <span className="text-gradient-gold text-glow-gold">Complaints</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               We take all complaints seriously. If you have any concerns regarding your account or our services, 
@@ -102,12 +102,12 @@ export default function Complaints() {
               {
                 icon: Mail,
                 title: "Complaint Email",
-                description: "complains@binofox.com",
+                description: "complains@rozkacapitals.com",
               },
               {
                 icon: AlertCircle,
                 title: "Report Abuse",
-                description: "abuse@binofox.com",
+                description: "abuse@rozkacapitals.com",
               },
               {
                 icon: Clock,
@@ -157,8 +157,8 @@ export default function Complaints() {
                   <p>
                     If you have any query regarding your account, or you are dissatisfied with our Services, 
                     in the first instance you should contact our Customer Support Department via e-mail at 
-                    <a href="mailto:complains@binofox.com" className="text-primary hover:underline font-medium ml-1">
-                      complains@binofox.com
+                    <a href="mailto:complains@rozkacapitals.com" className="text-primary hover:underline font-medium ml-1">
+                      complains@rozkacapitals.com
                     </a>
                     , live chat, telephone or any other official method of communication made available by the Company.
                   </p>
@@ -181,10 +181,10 @@ export default function Complaints() {
                     <div>
                       <p className="text-sm text-muted-foreground">Complaint Email</p>
                       <a
-                        href="mailto:complains@binofox.com"
+                        href="mailto:complains@rozkacapitals.com"
                         className="font-semibold text-primary hover:underline"
                       >
-                        complains@binofox.com
+                        complains@rozkacapitals.com
                       </a>
                     </div>
                   </div>
@@ -195,10 +195,10 @@ export default function Complaints() {
                     <div>
                       <p className="text-sm text-muted-foreground">Report Abuse</p>
                       <a
-                        href="mailto:abuse@binofox.com"
+                        href="mailto:abuse@rozkacapitals.com"
                         className="font-semibold text-primary hover:underline"
                       >
-                        abuse@binofox.com
+                        abuse@rozkacapitals.com
                       </a>
                     </div>
                   </div>

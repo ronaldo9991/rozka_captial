@@ -26,7 +26,7 @@ process.on('SIGINT', () => {
 
 // Start server
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 Binofox App Runner server running on port ${PORT}`);
+  console.log(`🚀 Rozka Capitals App Runner server running on port ${PORT}`);
   console.log(`📊 Health check available at: http://localhost:${PORT}/api/health`);
   console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
   

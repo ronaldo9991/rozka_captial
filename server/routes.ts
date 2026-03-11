@@ -34,7 +34,7 @@ import {
 // Service is initialized on-demand via getMyFatoorahService()
 
 // JWT Configuration for Mobile App
-const JWT_SECRET: string = process.env.JWT_SECRET || "binofox-jwt-secret-change-in-production";
+const JWT_SECRET: string = process.env.JWT_SECRET || "rozka-jwt-secret-change-in-production";
 const JWT_EXPIRES_IN: string = process.env.JWT_EXPIRES_IN || "15m"; // Short-lived access token
 const REFRESH_TOKEN_EXPIRES_IN: string = process.env.REFRESH_TOKEN_EXPIRES_IN || "30d"; // Long-lived refresh token
 
@@ -541,7 +541,7 @@ export async function registerRoutes(app: Express): Promise<void> {
 
       // Send email verification email (first time only)
       try {
-        const FRONTEND_URL = process.env.FRONTEND_URL || 'https://binofox.com';
+        const FRONTEND_URL = process.env.FRONTEND_URL || 'https://rozkacapitals.com';
         const verificationLink = `${FRONTEND_URL}/verify-email?token=${emailVerificationToken}`;
         await sendVerificationEmail(
           newUser.email,
@@ -773,7 +773,7 @@ export async function registerRoutes(app: Express): Promise<void> {
 
       // Send welcome email after verification
       try {
-        const FRONTEND_URL = process.env.FRONTEND_URL || 'https://binofox.com';
+        const FRONTEND_URL = process.env.FRONTEND_URL || 'https://rozkacapitals.com';
         await sendWelcomeEmail(
           user.email,
           user.fullName || user.username,
@@ -830,7 +830,7 @@ export async function registerRoutes(app: Express): Promise<void> {
 
       // Send verification email
       try {
-        const FRONTEND_URL = process.env.FRONTEND_URL || 'https://binofox.com';
+        const FRONTEND_URL = process.env.FRONTEND_URL || 'https://rozkacapitals.com';
         const verificationLink = `${FRONTEND_URL}/verify-email?token=${emailVerificationToken}`;
         await sendVerificationEmail(
           user.email,
@@ -964,7 +964,7 @@ export async function registerRoutes(app: Express): Promise<void> {
       );
 
       // Send email verification email (first time only)
-      const FRONTEND_URL = process.env.FRONTEND_URL || 'https://binofox.com';
+      const FRONTEND_URL = process.env.FRONTEND_URL || 'https://rozkacapitals.com';
       const verificationLink = `${FRONTEND_URL}/verify-email?token=${emailVerificationToken}`;
       sendVerificationEmail(email, fullName || username, verificationLink).catch(err => {
         console.error("Failed to send verification email:", err);
@@ -1247,7 +1247,7 @@ export async function registerRoutes(app: Express): Promise<void> {
         });
 
         // Generate reset link
-        const baseUrl = process.env.FRONTEND_URL || process.env.VITE_API_URL || "https://binofox.com";
+        const baseUrl = process.env.FRONTEND_URL || process.env.VITE_API_URL || "https://rozkacapitals.com";
         const resetLink = `${baseUrl}/reset-password?token=${resetToken}`;
 
         // Send reset email
@@ -1463,8 +1463,8 @@ export async function registerRoutes(app: Express): Promise<void> {
       // Check if user already has MT5 credentials
       if (user.mt5LiveLogin && user.mt5DemoLogin) {
         return res.json({
-          live: { login: user.mt5LiveLogin, password: user.mt5LivePassword || "", server: "BinofoxLimited-Live" },
-          demo: { login: user.mt5DemoLogin, password: user.mt5DemoPassword || "", server: "BinofoxLimited-Demo" },
+          live: { login: user.mt5LiveLogin, password: user.mt5LivePassword || "", server: "Rozka CapitalsLimited-Live" },
+          demo: { login: user.mt5DemoLogin, password: user.mt5DemoPassword || "", server: "Rozka CapitalsLimited-Demo" },
           message: "MT5 accounts already exist",
         });
       }
@@ -1499,8 +1499,8 @@ export async function registerRoutes(app: Express): Promise<void> {
           `- Live Account: ${user.mt5LiveLogin ? "Already exists" : "Requested"}\n` +
           `- Demo Account: ${user.mt5DemoLogin ? "Already exists" : "Requested"}\n\n` +
           `Suggested Group Names:\n` +
-          `- Live: real\\Binofox-Standard\n` +
-          `- Demo: demo\\Binofox_Demo\n\n` +
+          `- Live: real\\Rozka Capitals-Standard\n` +
+          `- Demo: demo\\Rozka Capitals_Demo\n\n` +
           `Please create the MT5 accounts in MT5 Manager Terminal and update the user credentials in the admin panel.`,
         status: "Open",
         priority: "High",
@@ -1536,7 +1536,7 @@ export async function registerRoutes(app: Express): Promise<void> {
     } catch (error: any) {
       console.error("[MT5 Account Request] Error:", error);
       res.status(500).json({ 
-        message: "Failed to submit MT5 account request. Please contact support@binofox.com",
+        message: "Failed to submit MT5 account request. Please contact support@rozkacapitals.com",
         error: error.message 
       });
     }
@@ -1572,7 +1572,7 @@ export async function registerRoutes(app: Express): Promise<void> {
           const liveMt5Result = await mt5Service.createAccount({
             name: user.fullName || user.username,
             email: user.email,
-            group: process.env.MT5_GROUP_LIVE || "real\\Binofox-Standard",
+            group: process.env.MT5_GROUP_LIVE || "real\\Rozka Capitals-Standard",
             leverage: 100,
             country: user.country || "",
             currency: "USD",
@@ -1586,7 +1586,7 @@ export async function registerRoutes(app: Express): Promise<void> {
           results.live = {
             login: liveMt5Result.login,
             password: liveMt5Result.password,
-            server: "BinofoxLimited-Live",
+            server: "Rozka CapitalsLimited-Live",
           };
           
           console.log(`[MT5] Live account created for ${user.email}:`, {
@@ -1604,7 +1604,7 @@ export async function registerRoutes(app: Express): Promise<void> {
         results.live = {
           login: user.mt5LiveLogin,
           password: user.mt5LivePassword || "",
-          server: "BinofoxLimited-Live",
+          server: "Rozka CapitalsLimited-Live",
         };
       }
       
@@ -1629,7 +1629,7 @@ export async function registerRoutes(app: Express): Promise<void> {
           results.demo = {
             login: demoMt5Result.login,
             password: demoMt5Result.password,
-            server: "BinofoxLimited-Demo",
+            server: "Rozka CapitalsLimited-Demo",
           };
           
           console.log(`[MT5] Demo account created for ${user.email}:`, {
@@ -1647,7 +1647,7 @@ export async function registerRoutes(app: Express): Promise<void> {
         results.demo = {
           login: user.mt5DemoLogin,
           password: user.mt5DemoPassword || "",
-          server: "BinofoxLimited-Demo",
+          server: "Rozka CapitalsLimited-Demo",
         };
       }
       
@@ -1661,7 +1661,7 @@ export async function registerRoutes(app: Express): Promise<void> {
         return res.status(500).json({ 
           message: errorMessage,
           errors: results.errors,
-          help: "Contact support@binofox.com for assistance with MT5 account creation.",
+          help: "Contact support@rozkacapitals.com for assistance with MT5 account creation.",
           configIssue: true, // Flag to indicate this is a configuration issue
           requiresServerConfig: true
         });
@@ -1679,11 +1679,11 @@ export async function registerRoutes(app: Express): Promise<void> {
         
       res.status(500).json({ 
         message: isConnectionError 
-          ? "MT5 server is being configured. Please contact support@binofox.com for assistance."
+          ? "MT5 server is being configured. Please contact support@rozkacapitals.com for assistance."
           : "Failed to create MT5 accounts. Please try again or contact support.",
         error: error.message,
         configIssue: isConnectionError,
-        help: "Contact support@binofox.com for MT5 account assistance."
+        help: "Contact support@rozkacapitals.com for MT5 account assistance."
       });
     }
   });
@@ -1715,14 +1715,14 @@ export async function registerRoutes(app: Express): Promise<void> {
         credentials.live = {
           login: user.mt5LiveLogin,
           password: user.mt5LivePassword || "",
-          server: "BinofoxLimited-Live",
+          server: "Rozka CapitalsLimited-Live",
         };
       }
       if (user.mt5DemoLogin) {
         credentials.demo = {
           login: user.mt5DemoLogin,
           password: user.mt5DemoPassword || "",
-          server: "BinofoxLimited-Demo",
+          server: "Rozka CapitalsLimited-Demo",
         };
       }
       
@@ -1800,14 +1800,14 @@ export async function registerRoutes(app: Express): Promise<void> {
           console.log(`[MT5] Creating ${mt5AccountType} MT5 account for user ${user.email}:`, {
             name: user.fullName || user.username,
             email: user.email,
-            group: `Binofox-${group}`,
+            group: `Rozka Capitals-${group}`,
             leverage: parseInt(leverage.split(":")[1]),
           });
           
           const mt5Result = await mt5ServiceToUse.createAccount({
             name: user.fullName || user.username,
             email: user.email,
-            group: `Binofox-${group}`,
+            group: `Rozka Capitals-${group}`,
             leverage: parseInt(leverage.split(":")[1]),
             country: user.country || "",
             currency: "USD",
@@ -1872,7 +1872,7 @@ export async function registerRoutes(app: Express): Promise<void> {
         freeMargin: mt5AccountData ? mt5AccountData.freeMargin.toString() : "0",
         marginLevel: mt5AccountData ? mt5AccountData.marginLevel.toString() : "0",
         currency: "USD",
-        server: isLiveAccount ? "BinofoxLimited-Live" : "BinofoxLimited-Demo",
+        server: isLiveAccount ? "Rozka CapitalsLimited-Live" : "Rozka CapitalsLimited-Demo",
       });
       
       const account = await storage.createTradingAccount(validatedData);
@@ -2106,7 +2106,7 @@ export async function registerRoutes(app: Express): Promise<void> {
 
       const newCard = await storage.createTopupCard({
         cardNumber: finalCardNumber,
-        cardHolderName: cardHolderName || "Binofox Limited",
+        cardHolderName: cardHolderName || "Rozka Capitals Limited",
         expiryMonth: finalExpiryMonth,
         expiryYear: finalExpiryYear,
         cvv: finalCvv,
@@ -2820,7 +2820,7 @@ export async function registerRoutes(app: Express): Promise<void> {
       if (!frontendUrl || frontendUrl === 'undefined' || frontendUrl.includes('undefined')) {
         frontendUrl = process.env.RAILWAY_PUBLIC_DOMAIN 
           ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN}` 
-          : "https://binofox.com";
+          : "https://rozkacapitals.com";
         console.log("[MyFatoorah] FRONTEND_URL was invalid, using fallback:", frontendUrl);
       }
 
@@ -2875,19 +2875,19 @@ export async function registerRoutes(app: Express): Promise<void> {
       console.log(`[MyFatoorah Callback] Processing payment for deposit ${depositId}, paymentId: ${paymentId}`);
 
       if (!paymentId) {
-        return res.redirect(`${process.env.FRONTEND_URL || 'https://binofox.com'}/dashboard/deposit?error=missing_payment_id`);
+        return res.redirect(`${process.env.FRONTEND_URL || 'https://rozkacapitals.com'}/dashboard/deposit?error=missing_payment_id`);
       }
 
       const deposit = await storage.getDeposit(depositId);
       if (!deposit) {
         console.error(`[MyFatoorah Callback] Deposit not found: ${depositId}`);
-        return res.redirect(`${process.env.FRONTEND_URL || 'https://binofox.com'}/dashboard/deposit?error=deposit_not_found`);
+        return res.redirect(`${process.env.FRONTEND_URL || 'https://rozkacapitals.com'}/dashboard/deposit?error=deposit_not_found`);
       }
 
       // Skip if already processed
       if (deposit.status === "Completed") {
         console.log(`[MyFatoorah Callback] Deposit ${deposit.id} already completed, redirecting to success`);
-        return res.redirect(`${process.env.FRONTEND_URL || 'https://binofox.com'}/dashboard/deposit?success=true&depositId=${deposit.id}`);
+        return res.redirect(`${process.env.FRONTEND_URL || 'https://rozkacapitals.com'}/dashboard/deposit?success=true&depositId=${deposit.id}`);
       }
 
       // Check payment status with MyFatoorah
@@ -2896,7 +2896,7 @@ export async function registerRoutes(app: Express): Promise<void> {
 
       if (!paymentStatus.Data) {
         console.error(`[MyFatoorah Callback] Payment status check failed for paymentId: ${paymentId}`);
-        return res.redirect(`${process.env.FRONTEND_URL || 'https://binofox.com'}/dashboard/deposit?error=payment_check_failed&depositId=${deposit.id}`);
+        return res.redirect(`${process.env.FRONTEND_URL || 'https://rozkacapitals.com'}/dashboard/deposit?error=payment_check_failed&depositId=${deposit.id}`);
       }
 
       const invoiceStatus = paymentStatus.Data.InvoiceStatus;
@@ -2908,7 +2908,7 @@ export async function registerRoutes(app: Express): Promise<void> {
       if (invoiceStatus !== "Paid") {
         console.log(`[MyFatoorah Callback] Payment status is ${invoiceStatus}, marking as rejected`);
         await storage.updateDepositStatus(depositId, "Rejected");
-        return res.redirect(`${process.env.FRONTEND_URL || 'https://binofox.com'}/dashboard/deposit?error=payment_failed&depositId=${deposit.id}`);
+        return res.redirect(`${process.env.FRONTEND_URL || 'https://rozkacapitals.com'}/dashboard/deposit?error=payment_failed&depositId=${deposit.id}`);
       }
 
       // Update deposit status
@@ -3013,10 +3013,10 @@ export async function registerRoutes(app: Express): Promise<void> {
       }
 
       // Redirect to success page
-      res.redirect(`${process.env.FRONTEND_URL || 'https://binofox.com'}/dashboard/deposit?success=true&depositId=${deposit.id}`);
+      res.redirect(`${process.env.FRONTEND_URL || 'https://rozkacapitals.com'}/dashboard/deposit?success=true&depositId=${deposit.id}`);
     } catch (error: any) {
       console.error("[MyFatoorah Callback] Error:", error);
-      res.redirect(`${process.env.FRONTEND_URL || 'https://binofox.com'}/dashboard/deposit?error=callback_error`);
+      res.redirect(`${process.env.FRONTEND_URL || 'https://rozkacapitals.com'}/dashboard/deposit?error=callback_error`);
     }
   });
 
@@ -3883,7 +3883,7 @@ export async function registerRoutes(app: Express): Promise<void> {
             email: user.email,
             fullName: user.fullName || user.username,
             referralId: user.referralId,
-            referralLink: user.referralId ? `${process.env.FRONTEND_URL || process.env.VITE_API_URL || "https://binofox.com"}/signup?ref=${user.referralId}` : null,
+            referralLink: user.referralId ? `${process.env.FRONTEND_URL || process.env.VITE_API_URL || "https://rozkacapitals.com"}/signup?ref=${user.referralId}` : null,
             wallet: {
               id: wallet.id,
               balance: wallet.balance,
@@ -4624,7 +4624,7 @@ export async function registerRoutes(app: Express): Promise<void> {
           results.live = {
             login: liveMt5Result.login,
             password: liveMt5Result.password,
-            server: "BinofoxLimited-Live",
+            server: "Rozka CapitalsLimited-Live",
           };
         } catch (mt5Error: any) {
           console.error(`[Admin MT5] Failed to create Live account:`, mt5Error);
@@ -4634,7 +4634,7 @@ export async function registerRoutes(app: Express): Promise<void> {
         results.live = {
           login: user.mt5LiveLogin,
           password: user.mt5LivePassword || "",
-          server: "BinofoxLimited-Live",
+          server: "Rozka CapitalsLimited-Live",
         };
       }
       
@@ -4659,7 +4659,7 @@ export async function registerRoutes(app: Express): Promise<void> {
           results.demo = {
             login: demoMt5Result.login,
             password: demoMt5Result.password,
-            server: "BinofoxLimited-Demo",
+            server: "Rozka CapitalsLimited-Demo",
           };
         } catch (mt5Error: any) {
           console.error(`[Admin MT5] Failed to create Demo account:`, mt5Error);
@@ -4669,7 +4669,7 @@ export async function registerRoutes(app: Express): Promise<void> {
         results.demo = {
           login: user.mt5DemoLogin,
           password: user.mt5DemoPassword || "",
-          server: "BinofoxLimited-Demo",
+          server: "Rozka CapitalsLimited-Demo",
         };
       }
       

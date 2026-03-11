@@ -194,7 +194,7 @@ export default function AuthCard({ type = "signup" }: AuthCardProps) {
       <div className="absolute inset-0 w-full h-full">
         <img
           src="/bg.png"
-          alt="Binofox Background"
+          alt="Rozka Capitals Background"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ opacity: 0.55 }}
         />
@@ -265,7 +265,7 @@ export default function AuthCard({ type = "signup" }: AuthCardProps) {
             </Link>
             <p className="text-xs text-gray-400 text-center">
               For more information and legal documentation, please visit{" "}
-              <Link href="/" className="text-primary hover:underline">binofox.com</Link>
+              <Link href="/" className="text-primary hover:underline">rozkacapitals.com</Link>
             </p>
           </div>
 
@@ -596,7 +596,7 @@ export default function AuthCard({ type = "signup" }: AuthCardProps) {
             {/* Legal Text */}
             <div className="mt-8 pt-6 border-t border-gray-800">
               <p className="text-[10px] text-gray-500 leading-relaxed">
-                Registration is with Binofox Limited, regulated by the relevant authorities, based on your selected country. 
+                Registration is with Rozka Capitals Limited, regulated by the relevant authorities, based on your selected country. 
                 By clicking Register, you agree to the Client Agreement and service terms and conditions listed in documents 
                 including General Business Terms, Partnership Agreement, Privacy Policy, Risk Disclosure and Warning Notice 
                 and Key Facts Statement. You also confirm that you fully understand the nature and the risks of the services and 

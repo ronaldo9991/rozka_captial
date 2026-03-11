@@ -10,7 +10,7 @@ const SMTP_CONFIG = {
   port: parseInt(process.env.SMTP_PORT || '587'),
   secure: false, // Mailgun uses STARTTLS on port 587
   auth: {
-    user: process.env.SMTP_LOGIN || 'accounts@mg.binofox.com',
+    user: process.env.SMTP_LOGIN || 'accounts@mg.rozkacapitals.com',
     pass: process.env.SMTP_PASSWORD || '',
   },
   // Mailgun specific settings
@@ -19,23 +19,23 @@ const SMTP_CONFIG = {
   },
 };
 
-const FROM_EMAIL = process.env.SMTP_FROM || 'accounts@mg.binofox.com';
-const FROM_NAME = process.env.SMTP_FROM_NAME || 'Binofox';
-const FRONTEND_URL = process.env.FRONTEND_URL || 'https://binofox.com';
+const FROM_EMAIL = process.env.SMTP_FROM || 'accounts@mg.rozkacapitals.com';
+const FROM_NAME = process.env.SMTP_FROM_NAME || 'Rozka Capitals';
+const FRONTEND_URL = process.env.FRONTEND_URL || 'https://rozkacapitals.com';
 
 // Load logo as base64 for embedding in emails
 let LOGO_BASE64: string | null = null;
 function getLogoBase64(): string {
   if (!LOGO_BASE64) {
     try {
-      // Use logoo12.png from root directory
-      const logoPath = join(process.cwd(), 'logoo12.png');
+      // Use ROZKA.png from root directory
+      const logoPath = join(process.cwd(), 'ROZKA.png');
       const logoBuffer = readFileSync(logoPath);
       LOGO_BASE64 = `data:image/png;base64,${logoBuffer.toString('base64')}`;
     } catch (error) {
       console.error('Failed to load logo for email:', error);
       // Fallback to URL if file not found
-      LOGO_BASE64 = `${FRONTEND_URL}/logoo12.png`;
+      LOGO_BASE64 = `${FRONTEND_URL}/ROZKA.png`;
     }
   }
   return LOGO_BASE64;
@@ -58,13 +58,13 @@ export function isEmailConfigured(): boolean {
 
 // ULTRA-MINIMAL base template - NO LOGO, EXACT FRONTEND COLORS, NO CLIPPING
 function getBaseTemplate(content: string, preheader: string = ''): string {
-  const whatsappLink = `https://wa.me/971547199005?text=${encodeURIComponent('Hi, I need help with Binofox Trading')}`;
-  return `<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Binofox</title></head><body style="margin:0;padding:0;background:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif"><div style="display:none;max-height:0;overflow:hidden">${preheader}</div><table role="presentation" style="width:100%;border-collapse:collapse;background:#000000"><tr><td align="center" style="padding:8px"><table role="presentation" style="width:100%;max-width:520px;border-collapse:collapse;margin:0 auto;background:#111111;border-radius:4px;border:1px solid #2B2B2B"><tr><td style="padding:16px;text-align:center;background:#000000;border-bottom:1px solid #D4AF37"><h1 style="margin:0;font-size:20px;font-weight:700;color:#D4AF37;letter-spacing:1.5px;text-transform:uppercase">BINOFOX</h1></td></tr><tr><td style="padding:18px 16px;background:#111111">${content}</td></tr><tr><td style="padding:12px 16px;background:#000000;border-top:1px solid #2B2B2B;border-radius:0 0 4px 4px;text-align:center"><p style="margin:0 0 8px;font-size:12px;color:#F5F5F5;font-weight:600">💬 Need Help?</p><a href="${whatsappLink}" style="display:inline-block;padding:8px 20px;background:#25D366;color:#fff;text-decoration:none;border-radius:4px;font-weight:600;font-size:12px;margin-bottom:10px">💬 WhatsApp</a><p style="margin:10px 0 2px;font-size:9px;color:#2B2B2B">© ${new Date().getFullYear()} Binofox</p><p style="margin:0;font-size:8px;color:#2B2B2B"><a href="${FRONTEND_URL}" style="color:#D4AF37;text-decoration:none">Website</a> • <a href="${FRONTEND_URL}/dashboard" style="color:#D4AF37;text-decoration:none">Dashboard</a></p></td></tr></table></td></tr></table></body></html>`;
+  const whatsappLink = `https://wa.me/971547199005?text=${encodeURIComponent('Hi, I need help with Rozka Capitals Trading')}`;
+  return `<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rozka Capitals</title></head><body style="margin:0;padding:0;background:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif"><div style="display:none;max-height:0;overflow:hidden">${preheader}</div><table role="presentation" style="width:100%;border-collapse:collapse;background:#000000"><tr><td align="center" style="padding:8px"><table role="presentation" style="width:100%;max-width:520px;border-collapse:collapse;margin:0 auto;background:#111111;border-radius:4px;border:1px solid #2B2B2B"><tr><td style="padding:16px;text-align:center;background:#000000;border-bottom:1px solid #D4AF37"><h1 style="margin:0;font-size:20px;font-weight:700;color:#D4AF37;letter-spacing:1.5px;text-transform:uppercase">ROZKA CAPITALS</h1></td></tr><tr><td style="padding:18px 16px;background:#111111">${content}</td></tr><tr><td style="padding:12px 16px;background:#000000;border-top:1px solid #2B2B2B;border-radius:0 0 4px 4px;text-align:center"><p style="margin:0 0 8px;font-size:12px;color:#F5F5F5;font-weight:600">💬 Need Help?</p><a href="${whatsappLink}" style="display:inline-block;padding:8px 20px;background:#25D366;color:#fff;text-decoration:none;border-radius:4px;font-weight:600;font-size:12px;margin-bottom:10px">💬 WhatsApp</a><p style="margin:10px 0 2px;font-size:9px;color:#2B2B2B">© ${new Date().getFullYear()} Rozka Capitals</p><p style="margin:0;font-size:8px;color:#2B2B2B"><a href="${FRONTEND_URL}" style="color:#D4AF37;text-decoration:none">Website</a> • <a href="${FRONTEND_URL}/dashboard" style="color:#D4AF37;text-decoration:none">Dashboard</a></p></td></tr></table></td></tr></table></body></html>`;
 }
 
 // Ultra compact base template for password reset emails - EXACT FRONTEND COLORS
 function getCompactBaseTemplate(content: string, preheader: string = ''): string {
-  return `<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reset Password</title></head><body style="margin:0;padding:0;background:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif"><div style="display:none;max-height:0;overflow:hidden">${preheader}</div><table role="presentation" style="width:100%;border-collapse:collapse;background:#000000"><tr><td align="center" style="padding:10px"><table role="presentation" style="width:100%;max-width:500px;border-collapse:collapse;margin:0 auto;background:#111111;border-radius:6px;border:1px solid #2B2B2B"><tr><td style="padding:15px;text-align:center;border-bottom:1px solid #D4AF37;background:#000000"><h1 style="margin:0;font-size:20px;color:#D4AF37;font-weight:700;letter-spacing:2px;text-transform:uppercase">BINOFOX</h1></td></tr><tr><td style="padding:20px 15px;background:#111111">${content}</td></tr><tr><td style="padding:10px 15px;text-align:center;border-top:1px solid #2B2B2B;background:#000000;border-radius:0 0 6px 6px"><p style="margin:0;font-size:9px;color:#2B2B2B">© ${new Date().getFullYear()} Binofox</p></td></tr></table></td></tr></table></body></html>`;
+  return `<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reset Password</title></head><body style="margin:0;padding:0;background:#000000;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif"><div style="display:none;max-height:0;overflow:hidden">${preheader}</div><table role="presentation" style="width:100%;border-collapse:collapse;background:#000000"><tr><td align="center" style="padding:10px"><table role="presentation" style="width:100%;max-width:500px;border-collapse:collapse;margin:0 auto;background:#111111;border-radius:6px;border:1px solid #2B2B2B"><tr><td style="padding:15px;text-align:center;border-bottom:1px solid #D4AF37;background:#000000"><h1 style="margin:0;font-size:20px;color:#D4AF37;font-weight:700;letter-spacing:2px;text-transform:uppercase">ROZKA CAPITALS</h1></td></tr><tr><td style="padding:20px 15px;background:#111111">${content}</td></tr><tr><td style="padding:10px 15px;text-align:center;border-top:1px solid #2B2B2B;background:#000000;border-radius:0 0 6px 6px"><p style="margin:0;font-size:9px;color:#2B2B2B">© ${new Date().getFullYear()} Rozka Capitals</p></td></tr></table></td></tr></table></body></html>`;
 }
 
 // Helper function to create styled buttons - OPTIMIZED
@@ -90,8 +90,8 @@ export function getWelcomeEmailContent(userName: string, referralId: string): { 
   const content = `<div style="text-align:center;margin-bottom:16px"><h2 style="margin:0 0 6px;font-size:18px;font-weight:700;color:#F5F5F5;line-height:1.2">Welcome, ${userName}!</h2><p style="margin:0;font-size:13px;color:#D4AF37;font-weight:500">Your Trading Journey Begins</p></div><p style="margin:0 0 16px;font-size:13px;color:#F5F5F5;line-height:1.4;text-align:center">Your account has been created. You're part of an elite trading community.</p><div style="background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.25);border-radius:4px;padding:14px;margin:16px 0"><h3 style="margin:0 0 10px;font-size:14px;color:#D4AF37;font-weight:600;text-align:center">Quick Start</h3><div style="display:block"><div style="display:flex;align-items:start;gap:10px;padding:10px 8px;background:#000000;border-radius:3px;border-left:2px solid #D4AF37;margin-bottom:10px"><span style="font-size:16px;color:#D4AF37;flex-shrink:0;font-weight:700;width:20px">1</span><div style="flex:1"><p style="margin:0;font-size:13px;color:#F5F5F5;font-weight:500;line-height:1.3">Upload ID proof</p><p style="margin:3px 0 0;font-size:11px;color:#2B2B2B;line-height:1.2">Secure processing</p></div></div><div style="display:flex;align-items:start;gap:10px;padding:10px 8px;background:#000000;border-radius:3px;border-left:2px solid #D4AF37;margin-bottom:10px"><span style="font-size:16px;color:#D4AF37;flex-shrink:0;font-weight:700;width:20px">2</span><div style="flex:1"><p style="margin:0;font-size:13px;color:#F5F5F5;font-weight:500;line-height:1.3">Processed in 24-48h</p><p style="margin:3px 0 0;font-size:11px;color:#2B2B2B;line-height:1.2">Auto verification</p></div></div><div style="display:flex;align-items:start;gap:10px;padding:10px 8px;background:#000000;border-radius:3px;border-left:2px solid #D4AF37;margin-bottom:10px"><span style="font-size:16px;color:#D4AF37;flex-shrink:0;font-weight:700;width:20px">3</span><div style="flex:1"><p style="margin:0;font-size:13px;color:#F5F5F5;font-weight:500;line-height:1.3">Create trading account</p><p style="margin:3px 0 0;font-size:11px;color:#2B2B2B;line-height:1.2">Multiple types</p></div></div><div style="display:flex;align-items:start;gap:10px;padding:10px 8px;background:#000000;border-radius:3px;border-left:2px solid #D4AF37"><span style="font-size:16px;color:#D4AF37;flex-shrink:0;font-weight:700;width:20px">4</span><div style="flex:1"><p style="margin:0;font-size:13px;color:#F5F5F5;font-weight:500;line-height:1.3">Deposit and trade</p><p style="margin:3px 0 0;font-size:11px;color:#2B2B2B;line-height:1.2">Multiple methods</p></div></div></div></div><div style="text-align:center;margin:16px 0 0"><a href="${FRONTEND_URL}/signin" style="display:inline-block;padding:11px 24px;background:#D4AF37;color:#000000;text-decoration:none;border-radius:4px;font-weight:600;font-size:13px">Launch Dashboard</a></div>`;
 
   return {
-    subject: `🚀 Welcome to Binofox, ${userName}!`,
-    html: getBaseTemplate(content, `Welcome to Binofox!`),
+    subject: `🚀 Welcome to Rozka Capitals, ${userName}!`,
+    html: getBaseTemplate(content, `Welcome to Rozka Capitals!`),
   };
 }
 
@@ -100,7 +100,7 @@ export function getVerificationEmailContent(userName: string, verificationLink: 
   const content = `<div style="text-align:center;margin-bottom:16px"><h2 style="margin:0 0 6px;font-size:18px;font-weight:700;color:#F5F5F5;line-height:1.2">Verify Your Email</h2><p style="margin:0;font-size:13px;color:#D4AF37;font-weight:500">Complete Your Registration</p></div><p style="margin:0 0 16px;font-size:13px;color:#F5F5F5;line-height:1.4;text-align:center">Hi ${userName}, please verify your email address to complete your registration.</p><div style="text-align:center;margin:16px 0"><a href="${verificationLink}" style="display:inline-block;padding:11px 24px;background:#D4AF37;color:#000000;text-decoration:none;border-radius:4px;font-weight:600;font-size:13px">Verify Email</a></div><p style="margin:12px 0;font-size:11px;color:#2B2B2B;text-align:center">This link will expire in 24 hours.</p><div style="background:#000000;border:1px solid #2B2B2B;border-radius:4px;padding:10px;margin:12px 0;text-align:center"><p style="margin:0;font-size:10px;color:#D4AF37;word-break:break-all"><a href="${verificationLink}" style="color:#D4AF37;text-decoration:underline">${verificationLink}</a></p></div>`;
 
   return {
-    subject: 'Verify Your Binofox Account',
+    subject: 'Verify Your Rozka Capitals Account',
     html: getBaseTemplate(content, 'Please verify your email address to complete registration.'),
   };
 }
@@ -110,7 +110,7 @@ export function getPasswordResetEmailContent(userName: string, resetLink: string
   const content = `<div style="text-align:center;margin:0 0 12px"><a href="${resetLink}" style="display:inline-block;padding:11px 24px;background:#D4AF37;color:#000000;text-decoration:none;border-radius:4px;font-weight:600;font-size:13px">Reset Password</a></div><p style="margin:0 0 10px;font-size:13px;color:#F5F5F5;text-align:center;line-height:1.4">Hi ${userName}, click above to reset. Expires in 1 hour.</p><div style="background:#000000;border:1px solid #2B2B2B;border-radius:4px;padding:10px;margin:10px 0;text-align:center"><p style="margin:0;font-size:10px;color:#D4AF37;word-break:break-all"><a href="${resetLink}" style="color:#D4AF37;text-decoration:underline">${resetLink}</a></p></div><p style="margin:10px 0 0;font-size:11px;color:#EF4444;text-align:center">Didn't request this? Ignore this email.</p>`;
 
   return {
-    subject: 'Reset Your Binofox Password',
+    subject: 'Reset Your Rozka Capitals Password',
     html: getCompactBaseTemplate(content, 'Reset password. Expires in 1 hour.'),
   };
 }
@@ -335,7 +335,7 @@ export function getSecurityAlertEmailContent(
   const content = `<div style="text-align:center;margin-bottom:16px"><div style="width:50px;height:50px;background:rgba(249,115,22,0.15);border-radius:50%;margin:0 auto 10px;display:flex;align-items:center;justify-content:center"><span style="font-size:28px">🔐</span></div><h2 style="margin:0 0 6px;font-size:18px;font-weight:700;color:#f97316;line-height:1.2">New Login Detected</h2><p style="margin:0;font-size:13px;color:#D4AF37;font-weight:500">Security Alert</p></div><p style="margin:0 0 16px;font-size:13px;color:#F5F5F5;line-height:1.4;text-align:center">Hi ${userName}, we detected a new login to your account.</p><div style="background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.25);border-radius:4px;padding:14px;margin:16px 0">${createInfoBox('Time', new Date().toLocaleString())}${createInfoBox('IP Address', ipAddress)}${createInfoBox('Device', device)}${createInfoBox('Location', location)}</div><div style="background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.3);border-radius:4px;padding:12px;margin:16px 0"><p style="margin:0;font-size:12px;color:#f97316;line-height:1.4">⚠️ If this wasn't you, please change your password immediately and contact support.</p></div><div style="text-align:center;margin:16px 0">${createButton('Secure My Account', `${FRONTEND_URL}/dashboard/profile`)}</div>`;
 
   return {
-    subject: '⚠️ New Login to Your Binofox Account',
+    subject: '⚠️ New Login to Your Rozka Capitals Account',
     html: getBaseTemplate(content, 'A new login was detected on your account.'),
   };
 }

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LIGHT MODE - Binofox Gold Theme */
+/* LIGHT MODE - Rozka Capitals Gold Theme */
 :root {
   --button-outline: rgba(212, 175, 55, .15);
   --badge-outline: rgba(212, 175, 55, .08);
@@ -240,7 +240,7 @@
     @apply font-serif;
   }
 
-  /* Custom Text Selection - Binofox Gold Brand Color */
+  /* Custom Text Selection - Rozka Capitals Gold Brand Color */
   ::selection {
     background-color: rgba(212, 175, 55, 0.3);
     color: #ffffff;

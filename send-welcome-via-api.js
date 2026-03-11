@@ -11,7 +11,7 @@ console.log('⚠️  Note: This requires admin authentication.');
 console.log('   Please use the admin panel or provide admin session cookie.');
 console.log('');
 console.log('✅ Logo Configuration:');
-console.log('   ✓ Updated to use logoo12.png');
+console.log('   ✓ Updated to use ROZKA.png');
 console.log('   ✓ All Mekness emails will use this logo');
 console.log('');
 console.log('📝 To send welcome email:');

@@ -142,7 +142,7 @@ export default function Forex() {
         <div className="absolute inset-0 w-full h-full">
           <img
             src="/hero img.jpeg"
-            alt="Binofox Hero"
+            alt="Rozka Capitals Hero"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ opacity: 0.65 }}
           />
@@ -498,7 +498,7 @@ export default function Forex() {
         </div>
       </div>
 
-      {/* Why Choose Binofox for Forex */}
+      {/* Why Choose Rozka Capitals for Forex */}
       <div id="benefits" className="py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative overflow-hidden">
         <div className="absolute inset-0 cyber-grid opacity-5"></div>
         <div className="container mx-auto max-w-7xl relative z-10">
@@ -509,7 +509,7 @@ export default function Forex() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              The Benefits of Forex in <span className="text-gradient-gold text-glow-gold inline-block pb-1">Binofox</span>
+              The Benefits of Forex in <span className="text-gradient-gold text-glow-gold inline-block pb-1">Rozka Capitals</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We prioritise our investors' needs and support them with superior technology and advantages
@@ -523,7 +523,7 @@ export default function Forex() {
                   icon: ShieldCheck,
                   title: "Benefit 01",
                   heading: "Forex Market is Regulated",
-                  description: "By regulators around the world, the OTC Forex market is regulated and is protecting the investors. With the help of different regulations in different countries, Binofox leads you towards the path to invest.",
+                  description: "By regulators around the world, the OTC Forex market is regulated and is protecting the investors. With the help of different regulations in different countries, Rozka Capitals leads you towards the path to invest.",
                 },
                 {
                   icon: DollarSign,
@@ -570,7 +570,7 @@ export default function Forex() {
 
                   <div className="flex items-center justify-center gap-2 mt-6 text-primary/70">
                     <CheckCircle2 className="w-4 h-4" />
-                    <span className="text-xs uppercase tracking-widest">Trusted by Binofox</span>
+                    <span className="text-xs uppercase tracking-widest">Trusted by Rozka Capitals</span>
                   </div>
                 </motion.div>
               ))}
@@ -688,7 +688,7 @@ export default function Forex() {
                 Ready to Start <span className="text-gradient-gold text-glow-gold inline-block pb-1">Trading Forex?</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-                Join thousands of traders who trust Binofox for their forex trading needs. 
+                Join thousands of traders who trust Rozka Capitals for their forex trading needs. 
                 Open your account today and experience the difference.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">

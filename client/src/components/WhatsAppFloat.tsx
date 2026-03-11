@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function WhatsAppFloat() {
   const [isVisible, setIsVisible] = useState(true);
   const whatsappNumber = "+971547199005"; // +971 54 719 9005
-  const message = "Hi, I need help with Binofox Trading";
+  const message = "Hi, I need help with Rozka Capitals Trading";
 
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;

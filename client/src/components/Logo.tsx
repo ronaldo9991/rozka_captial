@@ -25,8 +25,8 @@ export default function Logo({
     <div className={`flex items-center gap-3 ${className}`}>
       <div className={`relative ${iconSizeMap[size]}`}>
         <img
-          src="/broad.png"
-          alt="Binofox logo"
+          src="/ROZKA.png"
+          alt="Rozka Capitals logo"
           className="w-full h-full object-contain"
         />
       </div>
@@ -35,7 +35,7 @@ export default function Logo({
           className={`font-serif font-bold ${textSizeMap[size]} text-[#D4AF37] uppercase tracking-wider`}
           style={{ color: '#D4AF37' }}
         >
-          BINOFOX
+          ROZKA CAPITALS
         </span>
       )}
     </div>

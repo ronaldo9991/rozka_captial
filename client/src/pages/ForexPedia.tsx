@@ -1205,7 +1205,7 @@ export default function ForexPedia() {
                   Ready to Apply Your <span className="text-gradient-gold text-glow-gold inline-block pb-1">Knowledge</span>?
                 </h2>
                 <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Start trading with confidence using professional tools and resources from Binofox.
+                  Start trading with confidence using professional tools and resources from Rozka Capitals.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/signup">

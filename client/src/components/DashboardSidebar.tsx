@@ -48,7 +48,7 @@ import { useState } from "react";
 // Organized menu items - flattened for better display
 const mainNavItems = [
   { title: "Dashboard", icon: Home, url: "/dashboard" },
-  { title: "Web Terminal", icon: Monitor, url: "https://web.binofox.com/terminal", external: true, priority: true },
+  { title: "Web Terminal", icon: Monitor, url: "https://web.rozkacapitals.com/terminal", external: true, priority: true },
   { title: "Trading Accounts", icon: Wallet, url: "/dashboard/accounts" },
   { title: "History", icon: History, url: "/dashboard/history" },
   { title: "Deposit", icon: ArrowDownToLine, url: "/dashboard/deposit", priority: true },

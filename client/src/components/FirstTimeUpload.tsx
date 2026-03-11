@@ -147,7 +147,7 @@ export default function FirstTimeUpload() {
 
               <div>
                 <h1 className="text-4xl font-bold text-primary mb-3 uppercase tracking-wider">
-                  Welcome to Binofox!
+                  Welcome to Rozka Capitals!
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   Complete your account verification to get started

@@ -216,7 +216,7 @@ function ForexAdvantages() {
     },
   ], []);
 
-  const binofoxAdvantages = useMemo(() => [
+  const rozkaAdvantages = useMemo(() => [
     {
       icon: BarChart3,
       title: "Competitive Spreads",
@@ -419,7 +419,7 @@ function ForexAdvantages() {
         </div>
       </div>
 
-      {/* Binofox Advantages */}
+      {/* Rozka Capitals Advantages */}
       <div className="py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-gradient-to-b from-transparent via-primary/5 to-transparent">
         <div className="container mx-auto max-w-7xl">
           <motion.div
@@ -430,7 +430,7 @@ function ForexAdvantages() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              The Advantages of Forex at <span className="text-gradient-gold text-glow-gold inline-block pb-1">Binofox</span>
+              The Advantages of Forex at <span className="text-gradient-gold text-glow-gold inline-block pb-1">Rozka Capitals</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We prioritize our investors' needs and support them with superior technology and advantages
@@ -438,7 +438,7 @@ function ForexAdvantages() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {binofoxAdvantages.map((advantage, index) => (
+            {rozkaAdvantages.map((advantage, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -477,7 +477,7 @@ function ForexAdvantages() {
                   Ready to Experience These <span className="text-gradient-gold text-glow-gold inline-block pb-1">Advantages</span>?
                 </h2>
                 <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Join thousands of traders who are already benefiting from forex market advantages with Binofox.
+                  Join thousands of traders who are already benefiting from forex market advantages with Rozka Capitals.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/signup">

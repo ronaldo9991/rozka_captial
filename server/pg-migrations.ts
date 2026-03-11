@@ -64,7 +64,7 @@ export async function createPostgresTables(pool: any) {
       free_margin TEXT DEFAULT '0',
       margin_level TEXT DEFAULT '0',
       currency TEXT DEFAULT 'USD',
-      server TEXT DEFAULT 'Binofox-Live',
+      server TEXT DEFAULT 'Rozka-Live',
       enabled BOOLEAN DEFAULT true,
       created_at TIMESTAMP DEFAULT NOW()
     )`,

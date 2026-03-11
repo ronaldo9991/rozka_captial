@@ -128,7 +128,7 @@ export default function Footer() {
             <div className="grid md:grid-cols-2 gap-8 text-xs text-muted-foreground leading-relaxed">
               <div className="space-y-3">
                 <p>
-                  This website is operated by <span className="text-primary font-medium">Binofox Limited</span> Registration No:
+                  This website is operated by <span className="text-primary font-medium">Rozka Capitals Limited</span> Registration No:
                   <span className="text-primary font-medium"> 2024-00682</span>.
                 </p>
                 <p>
@@ -143,7 +143,7 @@ export default function Footer() {
                   <span className="font-medium text-foreground">Risk Warning:</span> Trading Forex and leveraged financial instruments involves significant risk and may result in the loss of your invested capital.
                 </p>
                 <p>
-                  <span className="font-medium text-foreground">Restricted Regions:</span> Binofox does not offer services to residents of jurisdictions including USA, Canada, Japan, Iran, Labuan Malaysia, Cuba, Sudan, Syria, and North Korea.
+                  <span className="font-medium text-foreground">Restricted Regions:</span> Rozka Capitals does not offer services to residents of jurisdictions including USA, Canada, Japan, Iran, Labuan Malaysia, Cuba, Sudan, Syria, and North Korea.
                 </p>
               </div>
             </div>
@@ -174,8 +174,8 @@ export default function Footer() {
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/30">
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
-                <a href="mailto:support@binofox.com" className="text-white font-medium hover:text-white/80 transition-colors">
-                  support@binofox.com
+                <a href="mailto:support@rozkacapitals.com" className="text-white font-medium hover:text-white/80 transition-colors">
+                  support@rozkacapitals.com
                 </a>
               </div>
               <div className="flex items-start gap-3">
@@ -197,7 +197,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 border-t border-primary/20 pt-6 text-center text-xs text-muted-foreground space-y-2">
-          <p className="text-primary font-semibold tracking-[0.4em] uppercase">© 2025 Binofox Limited. All Rights Reserved.</p>
+          <p className="text-primary font-semibold tracking-[0.4em] uppercase">© 2025 Rozka Capitals Limited. All Rights Reserved.</p>
           <p>Your trusted partner in forex trading excellence.</p>
         </div>
       </div>

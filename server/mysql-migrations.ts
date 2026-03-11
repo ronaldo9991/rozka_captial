@@ -55,7 +55,7 @@ export async function createMySQLTables(pool: any) {
       free_margin VARCHAR(255) DEFAULT '0',
       margin_level VARCHAR(255) DEFAULT '0',
       currency VARCHAR(255) DEFAULT 'USD',
-      server VARCHAR(255) DEFAULT 'Binofox-Live',
+      server VARCHAR(255) DEFAULT 'Rozka-Live',
       enabled BOOLEAN DEFAULT true,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE

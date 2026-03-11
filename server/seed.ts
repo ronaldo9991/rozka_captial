@@ -16,7 +16,7 @@ export async function seedDatabase() {
       await db.insert(users).values({
         username: "demo",
         password: await bcrypt.hash("demo123", 10),
-        email: "demo@binofox.com",
+        email: "demo.com",
         fullName: "Demo User",
         phone: "+1234567890",
         country: "United States",
@@ -36,21 +36,21 @@ export async function seedDatabase() {
       {
         username: "superadmin",
         password: "Admin@12345",
-        email: "superadmin@binofox.com",
+        email: "superadmin.com",
         fullName: "Super Administrator",
         role: "super_admin",
       },
       {
         username: "middleadmin",
         password: "Middle@12345",
-        email: "middleadmin@binofox.com",
+        email: "middleadmin.com",
         fullName: "Middle Administrator",
         role: "middle_admin",
       },
       {
         username: "normaladmin",
         password: "Normal@12345",
-        email: "normaladmin@binofox.com",
+        email: "normaladmin.com",
         fullName: "Normal Administrator",
         role: "normal_admin",
       },

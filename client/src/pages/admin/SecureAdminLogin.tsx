@@ -195,7 +195,7 @@ export default function SecureAdminLogin() {
           {/* Legal Notice at Top */}
           <p className="text-xs text-gray-400 mb-6 text-center">
             For more information and legal documentation, please visit{" "}
-            <a href="/" className="text-primary hover:underline">binofox.com</a>
+            <a href="/" className="text-primary hover:underline">rozkacapitals.com</a>
           </p>
 
           {/* Form Card - More Transparent */}
@@ -287,7 +287,7 @@ export default function SecureAdminLogin() {
 
             {/* Footer */}
             <div className="mt-6 text-center text-xs text-gray-500">
-              <p className="font-semibold">Binofox Limited Administration</p>
+              <p className="font-semibold">Rozka Capitals Limited Administration</p>
               <p className="mt-1">Secure • Encrypted • Audited • Multi-Factor Protected</p>
               <p className="text-xs mt-2 text-primary/60">
                 This is a secondary secure access point

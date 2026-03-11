@@ -51,7 +51,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <span>Trade Beyond Borders.</span>
-              <span className="text-primary">Trade Binofox.</span>
+              <span className="text-primary">Trade Rozka Capitals.</span>
             </motion.h1>
             
             {/* Description */}

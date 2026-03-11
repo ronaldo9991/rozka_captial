@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-console.log('🚀 Starting Binofox App Runner application...');
+console.log('🚀 Starting Rozka Capitals App Runner application...');
 
 // Set default environment variables
 process.env.NODE_ENV = process.env.NODE_ENV || 'production';
@@ -47,7 +47,7 @@ const startServer = async () => {
     // Root endpoint
     app.get('/', (req, res) => {
       res.json({
-        message: 'Binofox Trading Platform',
+        message: 'Rozka Capitals Trading Platform',
         status: 'running',
         environment: process.env.NODE_ENV,
         version: '1.0.0',
@@ -70,7 +70,7 @@ const startServer = async () => {
     
     app.get('/api/info', (req, res) => {
       res.json({
-        platform: 'Binofox Trading Platform',
+        platform: 'Rozka Capitals Trading Platform',
         version: '1.0.0',
         environment: process.env.NODE_ENV,
         deployment: 'AWS App Runner',
@@ -106,7 +106,7 @@ const startServer = async () => {
     
     // Start server
     server.listen(PORT, '0.0.0.0', () => {
-      console.log(`✅ Binofox App Runner server running on port ${PORT}`);
+      console.log(`✅ Rozka Capitals App Runner server running on port ${PORT}`);
       console.log(`📊 Health check available at: http://localhost:${PORT}/api/health`);
       console.log(`🌍 Environment: ${process.env.NODE_ENV}`);
       

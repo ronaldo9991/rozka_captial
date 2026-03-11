@@ -208,7 +208,7 @@ export default function DashboardHome() {
             description="Access your trading platform"
             icon={Monitor}
             buttonText="Open Terminal"
-            onClick={() => window.open("https://web.binofox.com/terminal", "_blank")}
+            onClick={() => window.open("https://web.rozkacapitals.com/terminal", "_blank")}
           />
           <ActionCard
             title="Open Live Account"
@@ -284,7 +284,7 @@ export default function DashboardHome() {
               <div className="h-[1px] w-40 bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
             </div>
             <p className="text-muted-foreground text-sm mt-2">
-              Use these credentials to connect to MetaTrader 5 platform at https://web.binofox.com/terminal
+              Use these credentials to connect to MetaTrader 5 platform at https://web.rozkacapitals.com/terminal
             </p>
           </div>
           
@@ -536,7 +536,7 @@ export default function DashboardHome() {
                     if (isConfigIssue) {
                       toast({
                         title: "⚠️ MT5 Server Configuration Required",
-                        description: "MT5 accounts are being configured. Contact support@binofox.com for assistance with MT5 account creation.",
+                        description: "MT5 accounts are being configured. Contact support@rozkacapitals.com for assistance with MT5 account creation.",
                         variant: "destructive",
                         duration: 20000,
                       });
@@ -568,14 +568,14 @@ export default function DashboardHome() {
                   if (error.name === 'TimeoutError' || error.name === 'AbortError' || error.message?.includes('aborted')) {
                     toast({
                       title: "Request Timeout",
-                      description: "The request took too long. Please contact support@binofox.com for assistance.",
+                      description: "The request took too long. Please contact support@rozkacapitals.com for assistance.",
                       variant: "destructive",
                       duration: 15000,
                     });
                   } else {
                     toast({
                       title: "MT5 Server Temporarily Unavailable",
-                      description: "Please contact support@binofox.com for MT5 account assistance.",
+                      description: "Please contact support@rozkacapitals.com for MT5 account assistance.",
                       variant: "destructive",
                       duration: 15000,
                     });
@@ -606,7 +606,7 @@ export default function DashboardHome() {
               <Headphones className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <div className="text-primary font-bold">support@binofox.com</div>
+              <div className="text-primary font-bold">support@rozkacapitals.com</div>
               <div className="text-xs text-muted-foreground">Available 24/7</div>
             </div>
           </div>

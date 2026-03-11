@@ -29,8 +29,8 @@ app.use(express.urlencoded({ limit: '100mb', extended: false }));
 app.use(cors({
   origin: (origin, callback) => {
     const allowed = [
-      'https://binofox.com',
-      'https://www.binofox.com',
+      'https://rozkacapitals.com',
+      'https://www.rozkacapitals.com',
       'http://localhost:3000',
       'http://localhost:5173',
     ];
@@ -130,7 +130,7 @@ async function bootstrap(): Promise<{ app: express.Express; server: Server }> {
   
   app.use(session({
     store: sessionStore,
-    secret: process.env.SESSION_SECRET || "binofox-secret-key-change-in-production",
+    secret: process.env.SESSION_SECRET || "rozka-secret-key-change-in-production",
     resave: false,
     saveUninitialized: false,
     cookie: {

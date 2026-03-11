@@ -79,7 +79,7 @@ export default function DepositsWithdrawals() {
   ];
 
   const depositSteps = [
-    "Log into your Binofox client portal",
+    "Log into your Rozka Capitals client portal",
     "Navigate to 'Deposit Funds' section",
     "Select your preferred payment method",
     "Enter deposit amount and confirm",
@@ -101,7 +101,7 @@ export default function DepositsWithdrawals() {
     },
     {
       question: "Are there any deposit or withdrawal fees?",
-      answer: "Binofox does not charge any deposit or withdrawal fees. However, your payment provider (bank, e-wallet, crypto network) may apply their own fees."
+      answer: "Rozka Capitals does not charge any deposit or withdrawal fees. However, your payment provider (bank, e-wallet, crypto network) may apply their own fees."
     },
     {
       question: "How long do withdrawals take?",
@@ -169,7 +169,7 @@ export default function DepositsWithdrawals() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Fund your account instantly with multiple payment methods. Withdraw your profits quickly and securely with zero fees from Binofox.
+              Fund your account instantly with multiple payment methods. Withdraw your profits quickly and securely with zero fees from Rozka Capitals.
             </motion.p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/dashboard/deposit">

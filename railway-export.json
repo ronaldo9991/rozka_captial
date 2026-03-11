@@ -3,7 +3,7 @@
     {
       "id": "93a02135-e946-431f-9ac7-b593183b068c",
       "username": "demo",
-      "email": "demo@binofox.com",
+      "email": "demo.com",
       "password": "$2b$10$oNRX/RWfOzFh66DXKX3H7u86C1O0J6tPNDU6myh.oLwnmWv6KP1DW",
       "full_name": "Demo User",
       "phone": "+1234567890",
@@ -219,7 +219,7 @@
     {
       "id": "358bc6b6-0497-4e46-846f-254cd81a9c6a",
       "username": "saul704",
-      "email": "saul@binofox.com",
+      "email": "saul.com",
       "password": "$2b$10$o4mByM4zwY6UUpu.Eqh22eaGIUtleQuTX8hKoGmyDh7XmWpt6siaa",
       "full_name": "SAUL",
       "phone": "+919655716000",
@@ -255,7 +255,7 @@
     {
       "id": "7abec948-23c1-4097-aac5-f8200741e9fb",
       "username": "superadmin12313743",
-      "email": "superadmin12313@binofox.com",
+      "email": "superadmin12313.com",
       "password": "$2b$10$16hD.Fht27n4x74aibZXmOWvuVvUaDAjrraM0crqaWTSvgsa/y6Za",
       "full_name": "Ronaldo Rajan Salamon",
       "phone": "+919655716000",
@@ -291,7 +291,7 @@
     {
       "id": "b0a3ae00-0314-4543-ac39-e881437bc255",
       "username": "babar908",
-      "email": "babar@binofox.com",
+      "email": "babar.com",
       "password": "$2b$10$5o.l6PjQI2z6rYqjKQ9v8eDXviXg0R8PwCYIY/6aW8rg6mdR7c5hK",
       "full_name": "babar",
       "phone": "+92 502438422",
@@ -347,7 +347,7 @@
     {
       "id": "368a18d0-1456-4559-9986-19e438e69718",
       "username": "superadmin",
-      "email": "superadmin@binofox.com",
+      "email": "superadmin.com",
       "password": "$2b$10$ApTksqs07wuE4ABPVQ1QCeXErXq6qahGG4LV4CARx22G9RN9EOnwa",
       "full_name": "Super Administrator",
       "role": "super_admin",
@@ -358,7 +358,7 @@
     {
       "id": "38a81ca6-3272-42c8-8143-31bc1d5c6cd3",
       "username": "middleadmin",
-      "email": "middleadmin@binofox.com",
+      "email": "middleadmin.com",
       "password": "$2b$10$v7ghiRqDnuCynAhvVdZ1m.MgNY4P3nB8hWMwq1dVKS5qBS2ZyHP.W",
       "full_name": "Middle Administrator",
       "role": "middle_admin",
@@ -369,7 +369,7 @@
     {
       "id": "2429bbcd-0384-4b86-969b-767249f76e6e",
       "username": "normaladmin",
-      "email": "normaladmin@binofox.com",
+      "email": "normaladmin.com",
       "password": "$2b$10$m96808.StzGbSLGoywz2cu9cySyAPruga0zkDr9U5VvQYXl8RYZya",
       "full_name": "Normal Administrator",
       "role": "normal_admin",
@@ -380,7 +380,7 @@
     {
       "id": "a1512098-f196-4eea-901e-f80d0d40d5c3",
       "username": "superadmin2",
-      "email": "superadmin2@binofox.com",
+      "email": "superadmin2.com",
       "password": "$2b$10$hate5hYrCfUBXKvHDmlNXuT9dPx8shrDFxVfr7bQOGCCgHkFEvXjq",
       "full_name": "superrr",
       "role": "middle_admin",
@@ -437,7 +437,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-22T14:38:31.263Z"
     },
@@ -455,7 +455,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-25T05:44:29.582Z"
     },
@@ -473,7 +473,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-25T05:46:50.919Z"
     },
@@ -491,7 +491,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-25T05:57:59.302Z"
     },
@@ -509,7 +509,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-25T06:11:19.810Z"
     },
@@ -527,7 +527,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-25T16:02:22.146Z"
     },
@@ -545,7 +545,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-26T07:32:56.981Z"
     },
@@ -563,7 +563,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-28T11:58:25.457Z"
     },
@@ -581,7 +581,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-28T11:59:02.737Z"
     },
@@ -599,7 +599,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-29T11:34:24.791Z"
     },
@@ -617,7 +617,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-29T11:36:07.192Z"
     },
@@ -635,7 +635,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-29T11:51:57.658Z"
     },
@@ -653,7 +653,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-29T13:28:45.907Z"
     },
@@ -671,7 +671,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-11-29T15:11:39.134Z"
     },
@@ -689,7 +689,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-12-01T14:03:51.435Z"
     },
@@ -707,7 +707,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-12-01T14:05:49.899Z"
     },
@@ -725,7 +725,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-12-03T13:37:36.289Z"
     },
@@ -743,7 +743,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-12-03T17:24:16.959Z"
     },
@@ -761,7 +761,7 @@
       "free_margin": "0",
       "margin_level": "0",
       "currency": "USD",
-      "server": "BinofoxLimited-Live",
+      "server": "RozkaCapitals-Live",
       "enabled": true,
       "created_at": "2025-12-03T17:24:38.856Z"
     }
@@ -3172,7 +3172,7 @@
       "action": "withdrawal_requested",
       "entity": "withdrawal",
       "entity_id": "fc2a9896-f347-4097-a8de-31f0f4f2c71e",
-      "details": "New withdrawal request: $100 from babar@binofox.com (Account: 68586535)",
+      "details": "New withdrawal request: $100 from babar.com (Account: 68586535)",
       "ip_address": null,
       "created_at": "2025-11-29T11:53:19.397Z"
     },
@@ -3381,7 +3381,7 @@
       "action": "withdrawal_requested",
       "entity": "withdrawal",
       "entity_id": "7487f13f-3918-40cf-b856-ab1769de4f28",
-      "details": "New withdrawal request: $302 from babar@binofox.com (Account: 77906100)",
+      "details": "New withdrawal request: $302 from babar.com (Account: 77906100)",
       "ip_address": null,
       "created_at": "2025-11-29T13:40:00.599Z"
     },

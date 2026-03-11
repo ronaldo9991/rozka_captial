@@ -339,7 +339,7 @@ export class DbStorage implements IStorage {
             '0' as free_margin,
             '0' as margin_level,
             'USD' as currency,
-            'Binofox-Live' as server,
+            'Rozka-Live' as server,
             CASE WHEN status = 'approved' THEN 1 ELSE 0 END as enabled,
             created_at
           FROM trading_accounts
@@ -362,7 +362,7 @@ export class DbStorage implements IStorage {
           freeMargin: String(row.free_margin || '0'),
           marginLevel: String(row.margin_level || '0'),
           currency: row.currency || 'USD',
-          server: row.server || 'Binofox-Live',
+          server: row.server || 'Rozka-Live',
           enabled: Boolean(row.enabled),
           createdAt: row.created_at || new Date(),
         })) as TradingAccount[];

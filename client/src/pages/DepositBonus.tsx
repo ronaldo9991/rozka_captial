@@ -93,7 +93,7 @@ export default function DepositBonus() {
     {
       step: "1",
       title: "Open Account",
-      description: "Register for a new trading account with Binofox or log into existing account.",
+      description: "Register for a new trading account with Rozka Capitals or log into existing account.",
       icon: Users
     },
     {

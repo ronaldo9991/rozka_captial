@@ -185,7 +185,7 @@ export default function AccountSelector({
             <Button
               variant="outline"
               size="sm"
-              onClick={() => window.open("https://web.binofox.com/terminal", "_blank")}
+              onClick={() => window.open("https://web.rozkacapitals.com/terminal", "_blank")}
               className="border-primary/30 hover:bg-primary/10"
             >
               <Monitor className="w-4 h-4 mr-2" />

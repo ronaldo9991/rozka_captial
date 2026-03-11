@@ -14,10 +14,10 @@ export default function CTASection() {
     >
       <div className="container mx-auto max-w-[1280px] text-center">
         <h2 className="text-4xl font-bold mb-4 text-primary-foreground">
-          Start Trading with Binofox Today
+          Start Trading with Rozka Capitals Today
         </h2>
         <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-          Join thousands of traders who trust Binofox for their forex trading needs.
+          Join thousands of traders who trust Rozka Capitals for their forex trading needs.
         </p>
         <Link href="/signin">
           <Button size="lg" variant="secondary" className="gap-2" data-testid="button-get-started">

@@ -29,7 +29,7 @@ export default function PublicHeader() {
     forexLinks.some((link) => location.startsWith(link.href));
 
   const navLinkBase =
-    "text-foreground/90 hover:text-primary transition-all duration-300 font-medium text-[15px] relative group py-2 px-1 rounded-lg hover:bg-primary/10";
+    "text-foreground/90 hover:text-primary transition-all duration-300 font-medium text-[13px] md:text-[14px] relative group py-1.5 px-1 rounded-lg hover:bg-primary/10";
 
   // Handle dropdown with delay to prevent accidental closes
   const handleMouseEnter = () => {
@@ -66,14 +66,14 @@ export default function PublicHeader() {
             paddingTop: 'env(safe-area-inset-top)'
           }}
         >
-          <div className="container mx-auto max-w-[1280px] flex items-center justify-between h-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-          {/* Logo */}
+          <div className="container mx-auto max-w-[1280px] flex items-center justify-between h-14 md:h-16 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
+          {/* Logo - compact for more hero space */}
           <Link href="/" className="flex-shrink-0">
-            <Logo size="lg" />
+            <Logo size="md" showText={true} />
           </Link>
 
           {/* Desktop Navigation */}
-              <nav className="hidden lg:flex items-center gap-8">
+              <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
                 <Link
                   href="/"
                   className={cn(navLinkBase, isActive("/") && "text-primary")}
@@ -174,7 +174,7 @@ export default function PublicHeader() {
               <Button 
                 variant="ghost" 
                 size="sm"
-                className="text-foreground/80 hover:text-primary hover:bg-primary/15 h-10 px-6 text-[14px] font-medium border border-primary/20 hover:border-primary/40 rounded-lg transition-all duration-300" 
+                className="text-foreground/80 hover:text-primary hover:bg-primary/15 h-9 px-4 text-[13px] font-medium border border-primary/20 hover:border-primary/40 rounded-lg transition-all duration-300" 
                 data-testid="button-signin"
               >
                 Sign In
@@ -183,7 +183,7 @@ export default function PublicHeader() {
             <Link href="/signup">
               <Button 
                 size="sm"
-                className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-black font-semibold h-10 px-6 text-[14px] rounded-lg shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105" 
+                className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-black font-semibold h-9 px-4 text-[13px] rounded-lg shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105" 
                 data-testid="button-signup"
               >
                 Sign Up
@@ -220,7 +220,7 @@ export default function PublicHeader() {
         <div 
           className="lg:hidden fixed z-[99] pointer-events-none"
           style={{
-            top: 'calc(6rem + env(safe-area-inset-top))',
+            top: 'calc(4rem + env(safe-area-inset-top))',
             left: 0,
             right: 0,
             bottom: 0,
@@ -232,7 +232,7 @@ export default function PublicHeader() {
             className="fixed bg-black/50 backdrop-blur-md pointer-events-auto"
             onClick={() => setMobileMenuOpen(false)}
             style={{ 
-              top: 'calc(6rem + env(safe-area-inset-top))',
+              top: 'calc(4rem + env(safe-area-inset-top))',
               left: 0,
               right: 0,
               bottom: 0,
@@ -244,7 +244,7 @@ export default function PublicHeader() {
           <div 
             className="fixed bg-black/70 backdrop-blur-xl flex flex-col pointer-events-auto"
             style={{ 
-              top: 'calc(6rem + env(safe-area-inset-top))',
+              top: 'calc(4rem + env(safe-area-inset-top))',
               left: 0,
               right: 0,
               bottom: 0,

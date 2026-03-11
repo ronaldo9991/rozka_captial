@@ -8,9 +8,9 @@ export default function CorporateServices() {
   const services = [
     {
       icon: Users,
-      title: "Binofox IB",
+      title: "Rozka Capitals IB",
       subtitle: "Introducing Broker Program",
-      description: "Binofox IB's revenue sharing model will help your business grow beyond benchmark. Earn competitive commissions and enjoy dedicated support.",
+      description: "Rozka Capitals IB's revenue sharing model will help your business grow beyond benchmark. Earn competitive commissions and enjoy dedicated support.",
       features: [
         "Competitive Revenue Share",
         "Multi-Level IB Structure",
@@ -24,9 +24,9 @@ export default function CorporateServices() {
     },
     {
       icon: Headphones,
-      title: "Binofox Support",
+      title: "Rozka Capitals Support",
       subtitle: "Tailored Business Solutions",
-      description: "Our Binofox team will analyse your customer and business structure to setup the most rewarding and efficient solution for your needs.",
+      description: "Our Rozka Capitals team will analyse your customer and business structure to setup the most rewarding and efficient solution for your needs.",
       features: [
         "Custom Integration",
         "White Label Solutions",
@@ -40,7 +40,7 @@ export default function CorporateServices() {
     },
     {
       icon: Network,
-      title: "Binofox Prime",
+      title: "Rozka Capitals Prime",
       subtitle: "Institutional Services",
       description: "Support your business with technology driven FX clearing and ECN based liquidity pools. Professional-grade infrastructure for institutions.",
       features: [
@@ -71,7 +71,7 @@ export default function CorporateServices() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-primary">Partner With</span> Binofox
+            <span className="text-primary">Partner With</span> Rozka Capitals
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We offer tailor-made partnership opportunities for mutual interest and long-term success

@@ -70,7 +70,7 @@ export default function AdminTopupCards() {
   const [newlyCreatedCard, setNewlyCreatedCard] = useState<TopupCard | null>(null);
   const [cardForm, setCardForm] = useState({
     cardNumber: "",
-    cardHolderName: "Binofox Limited",
+    cardHolderName: "Rozka Capitals Limited",
     expiryMonth: "",
     expiryYear: "",
     cvv: "",
@@ -112,7 +112,7 @@ export default function AdminTopupCards() {
       setViewCardDialogOpen(true);
       setCardForm({
         cardNumber: "",
-        cardHolderName: "Binofox Limited",
+        cardHolderName: "Rozka Capitals Limited",
         expiryMonth: "",
         expiryYear: "",
         cvv: "",
@@ -570,7 +570,7 @@ export default function AdminTopupCards() {
             <div className="space-y-2">
               <Label>Card Holder Name</Label>
               <Input
-                placeholder="Binofox Limited"
+                placeholder="Rozka Capitals Limited"
                 value={cardForm.cardHolderName}
                 onChange={(e) => setCardForm({ ...cardForm, cardHolderName: e.target.value })}
               />

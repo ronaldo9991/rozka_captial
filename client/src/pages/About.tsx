@@ -56,7 +56,7 @@ export default function About() {
     {
       icon: Infinity,
       title: "UNIVERSE IS CHAOS",
-      description: "Investing is a lifetime profession and a discipline of constant learning. Markets appear chaotic, yet every turbulent move hides an internal structure. The Binofox philosophy embraces that duality—helping traders decode disorder to find new alpha.",
+      description: "Investing is a lifetime profession and a discipline of constant learning. Markets appear chaotic, yet every turbulent move hides an internal structure. The Rozka Capitals philosophy embraces that duality—helping traders decode disorder to find new alpha.",
       image: "/chaos.jpg"
     },
     {
@@ -68,7 +68,7 @@ export default function About() {
     {
       icon: Layers,
       title: "WINNING LOOP",
-      description: "Each feedback loop—from strategy testing to post-trade analytics—adds a new layer of intelligence. Binofox platforms hardwire these loops so traders can refine faster and scale smarter.",
+      description: "Each feedback loop—from strategy testing to post-trade analytics—adds a new layer of intelligence. Rozka Capitals platforms hardwire these loops so traders can refine faster and scale smarter.",
       image: "/winning.jpg"
     },
     {
@@ -120,7 +120,7 @@ export default function About() {
         <div className="absolute inset-0 w-full h-full">
           <img
             src="/hero img.jpeg"
-            alt="Binofox Hero"
+            alt="Rozka Capitals Hero"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ opacity: 0.55 }}
           />
@@ -148,7 +148,7 @@ export default function About() {
             </motion.div>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 md:mb-10 px-4">
-              About <span className="text-gradient-gold text-glow-gold">Binofox</span>
+              About <span className="text-gradient-gold text-glow-gold">Rozka Capitals</span>
             </h1>
             <motion.p 
               className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-6 sm:mb-8 md:mb-10 px-4"
@@ -164,8 +164,8 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              {/*Binofox is reshaping the rules in Investment world and simplicity to invest.*/}
-              Binofox is a global investment company that provides a range of investment products and services to its clients.
+              {/*Rozka Capitals is reshaping the rules in Investment world and simplicity to invest.*/}
+              Rozka Capitals is a global investment company that provides a range of investment products and services to its clients.
             </motion.p>
 
             {/* CTA Button */}
@@ -233,7 +233,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* About Binofox Section - Redesigned */}
+      {/* About Rozka Capitals Section - Redesigned */}
       <div className="py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-muted/30 relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 web3-grid-bg opacity-5"></div>
@@ -259,18 +259,18 @@ export default function About() {
               {/* Main Text */}
               <div className="space-y-6 text-center">
                 <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-                  <span className="font-bold text-gradient-gold text-glow-gold">Binofox</span> is a global forex broker built for traders who demand better. 
+                  <span className="font-bold text-gradient-gold text-glow-gold">Rozka Capitals</span> is a global forex broker built for traders who demand better. 
                   Founded in 2018 in London, we've grown from a boutique dealing desk into a trusted platform serving over 70,000 traders across 60 countries. 
                   Our mission is simple: make professional grade forex trading accessible to everyone. We combine institutional level execution with 
-                  transparent pricing, cutting edge technology, and genuine customer support. At Binofox, you're not just another account number. 
+                  transparent pricing, cutting edge technology, and genuine customer support. At Rozka Capitals, you're not just another account number. 
                   You're part of a community that values your success as much as we value ours.
                   </p>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  As a company, Binofox specializes in foreign exchange trading, the world's largest financial market where over $7.5 trillion trades daily. 
+                  As a company, Rozka Capitals specializes in foreign exchange trading, the world's largest financial market where over $7.5 trillion trades daily. 
                   We provide access to this market through our proprietary trading platform, offering spreads starting from 0.1 pips, execution speeds 
                   measured in milliseconds, and access to over 100 currency pairs. Whether you're taking your first steps in forex or you're a seasoned 
-                  professional, Binofox delivers the tools, education, and support you need. We're regulated, secure, and committed to helping you trade 
-                  with confidence. This is who we are. This is what we do. Welcome to Binofox.
+                  professional, Rozka Capitals delivers the tools, education, and support you need. We're regulated, secure, and committed to helping you trade 
+                  with confidence. This is who we are. This is what we do. Welcome to Rozka Capitals.
                   </p>
               </div>
 
@@ -279,7 +279,7 @@ export default function About() {
                 <div className="text-left">
                   <span className="text-xs uppercase tracking-widest text-primary font-semibold block mb-3">2018 → Foundation</span>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                        Binofox was born in London with a clear vision: bridge the gap between retail traders and institutional quality execution. 
+                        Rozka Capitals was born in London with a clear vision: bridge the gap between retail traders and institutional quality execution. 
                         We launched as a boutique dealing desk, determined to give every trader access to the same tight spreads and fast execution 
                         that professionals enjoyed. That commitment to fairness and quality became the cornerstone of our company culture.
                       </p>
@@ -287,7 +287,7 @@ export default function About() {
                 <div className="text-left">
                   <span className="text-xs uppercase tracking-widest text-primary font-semibold block mb-3">2020 → Acceleration</span>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                        As Binofox reached 30,000 active traders, we expanded our services significantly. We introduced comprehensive trading analytics, 
+                        As Rozka Capitals reached 30,000 active traders, we expanded our services significantly. We introduced comprehensive trading analytics, 
                         advanced risk management tools, and multilingual customer support. Recognizing that education drives success, we developed 
                         extensive learning resources to help our community understand forex markets and make better trading decisions.
                       </p>
@@ -295,7 +295,7 @@ export default function About() {
                 <div className="text-left">
                   <span className="text-xs uppercase tracking-widest text-primary font-semibold block mb-3">2024 → Momentum</span>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                        Today, with over 70,000 active accounts, Binofox continues to evolve. We've enhanced our trading interfaces, integrated 
+                        Today, with over 70,000 active accounts, Rozka Capitals continues to evolve. We've enhanced our trading interfaces, integrated 
                         intelligent market insights, and developed tools that adapt to individual trading styles. Yet our core values remain unchanged: 
                         personal service, transparent pricing, and a genuine commitment to every trader's success.
                       </p>
@@ -436,7 +436,7 @@ export default function About() {
                         <Rocket className="w-10 h-10 text-primary" />
                         <h3 className="text-3xl font-bold text-primary">2018</h3>
                     </div>
-                      <h4 className="text-xl font-bold mb-2">Binofox Founded</h4>
+                      <h4 className="text-xl font-bold mb-2">Rozka Capitals Founded</h4>
                       <p className="text-muted-foreground">
                         Established with a vision to democratize forex trading and provide accessible financial services globally.
                       </p>
@@ -716,7 +716,7 @@ export default function About() {
                   <span className="text-primary font-semibold">right time</span>, and the{' '}
                   <span className="text-primary font-semibold">right decision</span> for investors to make.{' '}
                   We are aware of risks, profit as well as opportunities to earn, and risks of making a loss.{' '}
-                  We deliver the investing, which we, <span className="text-gradient-gold text-glow-gold font-semibold inline-block pb-2">Binofox family</span>, 
+                  We deliver the investing, which we, <span className="text-gradient-gold text-glow-gold font-semibold inline-block pb-2">Rozka Capitals family</span>, 
                   approach as an art, to you, to all investors.
                 </p>
 
@@ -746,7 +746,7 @@ export default function About() {
               HOW TO BE A <span className="text-gradient-gold text-glow-gold">TRADER?</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We invite you to meet Binofox investment world. You can follow the steps below to be an online investor with us.
+              We invite you to meet Rozka Capitals investment world. You can follow the steps below to be an online investor with us.
             </p>
           </motion.div>
 

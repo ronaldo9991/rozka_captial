@@ -320,7 +320,7 @@ try {
     $user->Leverage = ${userInfo.leverage}; // Required: Leverage (e.g., 100)
     $user->Balance = 0;
     $user->Credit = 0;
-    $user->Company = 'Binofox';
+    $user->Company = 'Rozka Capitals';
     $user->Language = 1033;
     $user->Color = 0xFF000000;
     $user->Status = 'Enabled';

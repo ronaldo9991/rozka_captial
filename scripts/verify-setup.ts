@@ -271,7 +271,7 @@ async function checkFileStructure() {
 }
 
 async function main() {
-  console.log("🚀 Binofox Platform Setup Verification\n");
+  console.log("🚀 Rozka Capitals Platform Setup Verification\n");
   console.log("=" .repeat(50));
   
   await checkFileStructure();

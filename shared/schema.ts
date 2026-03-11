@@ -83,7 +83,7 @@ export const tradingAccounts = tableBuilder("trading_accounts", {
   freeMargin: textCol("free_margin").default("0"),
   marginLevel: textCol("margin_level").default("0"),
   currency: textCol("currency").default("USD"),
-  server: textCol("server").default("Binofox-Live"),
+  server: textCol("server").default("Rozka-Live"),
   enabled: boolCol("enabled", true),
   createdAt: timestampCol("created_at", true),
 });

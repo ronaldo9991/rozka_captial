@@ -61,7 +61,7 @@ export function createTables(db: Database.Database) {
       free_margin TEXT DEFAULT '0',
       margin_level TEXT DEFAULT '0',
       currency TEXT DEFAULT 'USD',
-      server TEXT DEFAULT 'Binofox-Live',
+      server TEXT DEFAULT 'Rozka-Live',
       enabled INTEGER DEFAULT 1,
       created_at INTEGER DEFAULT (strftime('%s', 'now') * 1000)
     )

@@ -11,7 +11,7 @@ async function createAdminUser() {
     const adminConfig = {
       username: "superadmin",
       password: "Admin@12345",
-      email: "superadmin@binofox.com",
+      email: "superadmin.com",
       fullName: "Super Administrator",
       role: "super_admin",
     };

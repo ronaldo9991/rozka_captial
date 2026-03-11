@@ -62,7 +62,7 @@ export default function Contact() {
         <div className="absolute inset-0 w-full h-full">
           <img
             src="/hero img.jpeg"
-            alt="Binofox Hero"
+            alt="Rozka Capitals Hero"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ opacity: 0.55 }}
           />
@@ -84,7 +84,7 @@ export default function Contact() {
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 md:mb-10">
-              Contact <span className="text-gradient-gold text-glow-gold">Binofox</span>
+              Contact <span className="text-gradient-gold text-glow-gold">Rozka Capitals</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-6 sm:mt-8 md:mt-10">
               Reach our global support team for personalised assistance, partnership inquiries, or platform guidance. 
@@ -115,9 +115,9 @@ export default function Contact() {
               {
                 icon: Mail,
                 title: "Email Us",
-                description: "support@binofox.com",
+                description: "support@rozkacapitals.com",
                 isClickable: true,
-                link: "mailto:support@binofox.com",
+                link: "mailto:support@rozkacapitals.com",
               },
               {
                 icon: Clock,
@@ -204,8 +204,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <a href="mailto:support@binofox.com" className="font-semibold hover:text-primary transition-colors">
-                        support@binofox.com
+                      <a href="mailto:support@rozkacapitals.com" className="font-semibold hover:text-primary transition-colors">
+                        support@rozkacapitals.com
                       </a>
                     </div>
                   </div>
@@ -377,32 +377,32 @@ export default function Contact() {
               </summary>
               <div className="mt-6 space-y-6 text-sm leading-relaxed text-muted-foreground max-h-[50vh] overflow-y-auto pr-4">
                 <section>
-                  <p>Binofox Brokerage Inc. (will be mention as Binofox in the following) takes your privacy seriously. The main purpose of this Privacy Policy is to inform you of how we treat your personal information that Binofox collects and receives when you use Binofox’s customer's portals, intended customer applications, job applications, website visitors. This policy is based on the privacy and data protection principles common to the countries in which we operate.</p>
+                  <p>Rozka Capitals Brokerage Inc. (will be mention as Rozka Capitals in the following) takes your privacy seriously. The main purpose of this Privacy Policy is to inform you of how we treat your personal information that Rozka Capitals collects and receives when you use Rozka Capitals’s customer's portals, intended customer applications, job applications, website visitors. This policy is based on the privacy and data protection principles common to the countries in which we operate.</p>
                 </section>
                 <section>
                   <h5 className="text-foreground font-semibold mb-2">Are you required to provide Personal Information?</h5>
-                  <p>For you to utilize our services, you will provide us with your Personal Information entirely spontaneously. In most circumstances, Binofox cannot take action without utilizing certain of your Personal Information, for example, because this Personal Information is required to process your instructions or orders or provide you with access to our services or marketing materials. In most cases, it will be impossible for us to provide the services to you without the relevant Personal Information.</p>
+                  <p>For you to utilize our services, you will provide us with your Personal Information entirely spontaneously. In most circumstances, Rozka Capitals cannot take action without utilizing certain of your Personal Information, for example, because this Personal Information is required to process your instructions or orders or provide you with access to our services or marketing materials. In most cases, it will be impossible for us to provide the services to you without the relevant Personal Information.</p>
                 </section>
                 <section>
-                  <h5 className="text-foreground font-semibold mb-2">Information Binofox Collects and Uses</h5>
-                  <p>Personal information is information about you such as your name, address, email address, or phone number, and that is not otherwise publicly available. For some financial products and services, we might also request your address, Social Security number, and information about your assets. Binofox depends on our users to update and correct their personal information when necessary.</p>
+                  <h5 className="text-foreground font-semibold mb-2">Information Rozka Capitals Collects and Uses</h5>
+                  <p>Personal information is information about you such as your name, address, email address, or phone number, and that is not otherwise publicly available. For some financial products and services, we might also request your address, Social Security number, and information about your assets. Rozka Capitals depends on our users to update and correct their personal information when necessary.</p>
                   <p className="mt-2">If we use your personal information for purposes other than as described in this Privacy Policy, we will offer you an effective way to opt-out of the use or ask for your consent before the use of such information.</p>
                 </section>
                 <section>
                   <h5 className="text-foreground font-semibold mb-2">Information Sharing</h5>
                   <ol className="list-decimal pl-4 space-y-2">
-                    <li>We believe that access, use, disclosure, or continuation of personal information is necessary to respond to satisfy any applicable law or statute, regulation, legal process, government request, to establish or exercise our legal rights or to defend against legal claims concerning Binofox, its users, or the public as required or permitted by law.</li>
+                    <li>We believe that access, use, disclosure, or continuation of personal information is necessary to respond to satisfy any applicable law or statute, regulation, legal process, government request, to establish or exercise our legal rights or to defend against legal claims concerning Rozka Capitals, its users, or the public as required or permitted by law.</li>
                     <li>We believe the access, use, disclosure, or continuation of personal information is necessary to share information to detect, prevent, investigate, or otherwise take action to address fraud, illegal activities, potential threats to the rights, property, or safety of any persons.</li>
                     <li>We received your confirmation.</li>
                   </ol>
                 </section>
                 <section>
                   <h5 className="text-foreground font-semibold mb-2">Confidentiality and Security</h5>
-                  <p>Binofox uses physical, electronic, and procedural safeguards and technologies to protect personal information from unauthorized access, use, or disclosure. Binofox limits access to your personal information to our employees, contractors, and agents who we believe reasonably need to gain access to such information to do their jobs to operate, implement, develop, perform or improve our services. These individuals are bound by confidentiality obligations to Binofox and may be subject to termination or legal actions if they fail to comply with these obligations.</p>
+                  <p>Rozka Capitals uses physical, electronic, and procedural safeguards and technologies to protect personal information from unauthorized access, use, or disclosure. Rozka Capitals limits access to your personal information to our employees, contractors, and agents who we believe reasonably need to gain access to such information to do their jobs to operate, implement, develop, perform or improve our services. These individuals are bound by confidentiality obligations to Rozka Capitals and may be subject to termination or legal actions if they fail to comply with these obligations.</p>
                 </section>
                 <section>
                   <h5 className="text-foreground font-semibold mb-2">Retention of Communications</h5>
-                  <p>When you send an email or other communications to Binofox, we retain those communications for a certain period to process your questions and concerns, respond to your requests, and improve our services.</p>
+                  <p>When you send an email or other communications to Rozka Capitals, we retain those communications for a certain period to process your questions and concerns, respond to your requests, and improve our services.</p>
                 </section>
                 <section>
                   <h5 className="text-foreground font-semibold mb-2">Transferring your Personal Information outside the EEA</h5>
@@ -411,15 +411,15 @@ export default function Contact() {
                 </section>
                 <section>
                   <h5 className="text-foreground font-semibold mb-2">Further rights for persons or information covered by GDPR</h5>
-                  <p>Concerning EEA residents and where your Personal Information is processed by a Binofox Entity established in the EEA (“Covered Individuals”). If you are a Covered Individual you have several legal rights under GDPR concerning the Personal Information that we hold about you. You can request these pieces of information by sending us an info request: info@binofox.com</p>
+                  <p>Concerning EEA residents and where your Personal Information is processed by a Rozka Capitals Entity established in the EEA (“Covered Individuals”). If you are a Covered Individual you have several legal rights under GDPR concerning the Personal Information that we hold about you. You can request these pieces of information by sending us an info request: info@rozkacapitals.com</p>
                 </section>
                 <section>
                   <h5 className="text-foreground font-semibold mb-2">Our Policy</h5>
-                  <p>Binofox regularly review our Privacy Policy. We will update this Privacy Policy from time to time, with or without notice. Binofox will, however, notify you about significant changes by sending a notice to your primary email address or by placing a notice on our website. Please feel free to contact us if you have questions or suggestions regarding this Privacy Policy by contacting us through the website.</p>
+                  <p>Rozka Capitals regularly review our Privacy Policy. We will update this Privacy Policy from time to time, with or without notice. Rozka Capitals will, however, notify you about significant changes by sending a notice to your primary email address or by placing a notice on our website. Please feel free to contact us if you have questions or suggestions regarding this Privacy Policy by contacting us through the website.</p>
                 </section>
                 <section>
                   <h5 className="text-foreground font-semibold mb-2">How to contact us</h5>
-                  <p>We welcome your views about our website and our Privacy Policy. If you have any questions about this Policy, please contact the Data Protection Officer at info@binofox.com or please contact Binofox Customer Services through the Binofox website at https://www.binofox.com/contact-us.</p>
+                  <p>We welcome your views about our website and our Privacy Policy. If you have any questions about this Policy, please contact the Data Protection Officer at info@rozkacapitals.com or please contact Rozka Capitals Customer Services through the Rozka Capitals website at https://www.rozkacapitals.com/contact-us.</p>
                 </section>
               </div>
             </details>

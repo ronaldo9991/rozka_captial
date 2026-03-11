@@ -36,7 +36,7 @@ const server = http.createServer((req, res) => {
     }));
   } else {
     res.end(JSON.stringify({
-      message: 'Binofox Debug Server',
+      message: 'Rozka Capitals Debug Server',
       status: 'running',
       url: req.url
     }));

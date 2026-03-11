@@ -382,11 +382,11 @@ export default function TradingAccounts() {
           
           <div className="space-y-4 py-4">
             <p className="text-sm leading-relaxed">
-              I am over 18 and declare that the information provided by me during the account opening process is true and correct and undertake to notify you, in writing, if there are any changes to this data. I guarantee that I do not breach any regulations of my country of residence in trading with Binofox.
+              I am over 18 and declare that the information provided by me during the account opening process is true and correct and undertake to notify you, in writing, if there are any changes to this data. I guarantee that I do not breach any regulations of my country of residence in trading with Rozka Capitals.
             </p>
             
             <p className="text-sm leading-relaxed">
-              I fully understand the nature and risks of trading Forex and other derivatives. I confirm I have read, understood and agree to be bound by all the Binofox statements, policies and agreements of the Business.
+              I fully understand the nature and risks of trading Forex and other derivatives. I confirm I have read, understood and agree to be bound by all the Rozka Capitals statements, policies and agreements of the Business.
             </p>
             
             <div className="flex items-start space-x-3 pt-2">
