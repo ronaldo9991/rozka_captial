@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { BRAND_TITLE } from "@/lib/brand";
 import { ArrowRight, TrendingUp, ChevronDown, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 
@@ -51,7 +52,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <span>Trade Beyond Borders.</span>
-              <span className="text-primary">Trade Rozka Capitals.</span>
+              <span className="text-primary">Trade {BRAND_TITLE}.</span>
             </motion.h1>
             
             {/* Description */}

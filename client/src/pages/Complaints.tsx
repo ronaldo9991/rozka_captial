@@ -1,4 +1,5 @@
 import PublicHeader from "@/components/PublicHeader";
+import { BRAND_TITLE } from "@/lib/brand";
 import Footer from "@/components/Footer";
 import AnimatedGrid from "@/components/AnimatedGrid";
 import ParticleField from "@/components/ParticleField";
@@ -84,7 +85,7 @@ export default function Complaints() {
               </div>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-              Rozka Capitals <span className="text-gradient-gold text-glow-gold">Complaints</span>
+              {BRAND_TITLE} <span className="text-gradient-gold text-glow-gold">Complaints</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               We take all complaints seriously. If you have any concerns regarding your account or our services, 

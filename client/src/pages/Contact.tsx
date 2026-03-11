@@ -1,4 +1,5 @@
 import PublicHeader from "@/components/PublicHeader";
+import { BRAND_TITLE } from "@/lib/brand";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
@@ -84,7 +85,7 @@ export default function Contact() {
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 md:mb-10">
-              Contact <span className="text-gradient-gold text-glow-gold">Rozka Capitals</span>
+              Contact <span className="text-gradient-gold text-glow-gold">{BRAND_TITLE}</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-6 sm:mt-8 md:mt-10">
               Reach our global support team for personalised assistance, partnership inquiries, or platform guidance. 

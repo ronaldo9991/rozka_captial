@@ -1,5 +1,6 @@
 import PublicHeader from "@/components/PublicHeader";
 import Footer from "@/components/Footer";
+import { BRAND_TITLE } from "@/lib/brand";
 import AnimatedGrid from "@/components/AnimatedGrid";
 import ParticleField from "@/components/ParticleField";
 import { motion } from "framer-motion";
@@ -430,7 +431,7 @@ function ForexAdvantages() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              The Advantages of Forex at <span className="text-gradient-gold text-glow-gold inline-block pb-1">Rozka Capitals</span>
+              The Advantages of Forex at <span className="text-gradient-gold text-glow-gold inline-block pb-1">{BRAND_TITLE}</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We prioritize our investors' needs and support them with superior technology and advantages

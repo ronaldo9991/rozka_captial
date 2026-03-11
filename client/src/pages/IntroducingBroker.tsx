@@ -1,5 +1,6 @@
 import PublicHeader from "@/components/PublicHeader";
 import Footer from "@/components/Footer";
+import { BRAND_TITLE } from "@/lib/brand";
 import AnimatedGrid from "@/components/AnimatedGrid";
 import ParticleField from "@/components/ParticleField";
 import { motion } from "framer-motion";
@@ -240,7 +241,7 @@ export default function IntroducingBroker() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Why Partner with <span className="text-gradient-gold inline-block pb-2">Rozka Capitals</span>
+              Why Partner with <span className="text-gradient-gold inline-block pb-2">{BRAND_TITLE}</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Industry-leading benefits designed to maximize your earning potential and support your growth.

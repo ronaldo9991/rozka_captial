@@ -125,7 +125,7 @@ export default function DownloadsSection() {
             Trading Platform <span className="text-gradient-gold text-glow-gold">Downloads</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Install Rozka Capitals MetaTrader 5 across desktop, web, and mobile. Choose your device below or scan the QR codes to download instantly.
+            Install R.O.Z.K.A CAPTIAL MetaTrader 5 across desktop, web, and mobile. Choose your device below or scan the QR codes to download instantly.
           </p>
         </motion.div>
 

@@ -1,4 +1,5 @@
 import PublicHeader from "@/components/PublicHeader";
+import { BRAND_TITLE } from "@/lib/brand";
 import Footer from "@/components/Footer";
 import CountingNumber from "@/components/CountingNumber";
 import { motion } from "framer-motion";
@@ -148,7 +149,7 @@ export default function About() {
             </motion.div>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 md:mb-10 px-4">
-              About <span className="text-gradient-gold text-glow-gold">Rozka Capitals</span>
+              About <span className="text-gradient-gold text-glow-gold">{BRAND_TITLE}</span>
             </h1>
             <motion.p 
               className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-6 sm:mb-8 md:mb-10 px-4"
@@ -259,7 +260,7 @@ export default function About() {
               {/* Main Text */}
               <div className="space-y-6 text-center">
                 <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-                  <span className="font-bold text-gradient-gold text-glow-gold">Rozka Capitals</span> is a global forex broker built for traders who demand better. 
+                  <span className="font-bold text-gradient-gold text-glow-gold">{BRAND_TITLE}</span> is a global forex broker built for traders who demand better. 
                   Founded in 2018 in London, we've grown from a boutique dealing desk into a trusted platform serving over 70,000 traders across 60 countries. 
                   Our mission is simple: make professional grade forex trading accessible to everyone. We combine institutional level execution with 
                   transparent pricing, cutting edge technology, and genuine customer support. At Rozka Capitals, you're not just another account number. 
@@ -436,7 +437,7 @@ export default function About() {
                         <Rocket className="w-10 h-10 text-primary" />
                         <h3 className="text-3xl font-bold text-primary">2018</h3>
                     </div>
-                      <h4 className="text-xl font-bold mb-2">Rozka Capitals Founded</h4>
+                      <h4 className="text-xl font-bold mb-2">{BRAND_TITLE} Founded</h4>
                       <p className="text-muted-foreground">
                         Established with a vision to democratize forex trading and provide accessible financial services globally.
                       </p>
@@ -716,7 +717,7 @@ export default function About() {
                   <span className="text-primary font-semibold">right time</span>, and the{' '}
                   <span className="text-primary font-semibold">right decision</span> for investors to make.{' '}
                   We are aware of risks, profit as well as opportunities to earn, and risks of making a loss.{' '}
-                  We deliver the investing, which we, <span className="text-gradient-gold text-glow-gold font-semibold inline-block pb-2">Rozka Capitals family</span>, 
+                  We deliver the investing, which we, <span className="text-gradient-gold text-glow-gold font-semibold inline-block pb-2">{BRAND_TITLE} family</span>, 
                   approach as an art, to you, to all investors.
                 </p>
 

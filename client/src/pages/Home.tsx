@@ -1,4 +1,5 @@
 import PublicHeader from "@/components/PublicHeader";
+import { BRAND_TITLE } from "@/lib/brand";
 import HeroSection from "@/components/HeroSection";
 import FeatureCards from "@/components/FeatureCards";
 import LiveTicker from "@/components/LiveTicker";
@@ -469,7 +470,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <span>Trade Beyond Borders.</span>
-                <span className="text-gradient-gold text-glow-gold">Trade Rozka Capitals.</span>
+                <span className="text-gradient-gold text-glow-gold">Trade {BRAND_TITLE}.</span>
               </motion.h1>
               
               {/* Description - Optimized Size for Scroll Button Visibility */}
@@ -678,7 +679,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
-              Why Choose <span className="text-gradient-gold text-glow-gold inline-block pb-2">Rozka Capitals</span>
+              Why Choose <span className="text-gradient-gold text-glow-gold inline-block pb-2">{BRAND_TITLE}</span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
               Join the world's most advanced forex trading platform trusted by professionals worldwide.

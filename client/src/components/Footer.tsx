@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import { BRAND_TITLE } from "@/lib/brand";
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
@@ -128,7 +129,7 @@ export default function Footer() {
             <div className="grid md:grid-cols-2 gap-8 text-xs text-muted-foreground leading-relaxed">
               <div className="space-y-3">
                 <p>
-                  This website is operated by <span className="text-primary font-medium">Rozka Capitals Limited</span> Registration No:
+                  This website is operated by <span className="text-primary font-medium">{BRAND_TITLE} Limited</span> Registration No:
                   <span className="text-primary font-medium"> 2024-00682</span>.
                 </p>
                 <p>
@@ -197,7 +198,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 border-t border-primary/20 pt-6 text-center text-xs text-muted-foreground space-y-2">
-          <p className="text-primary font-semibold tracking-[0.4em] uppercase">© 2025 Rozka Capitals Limited. All Rights Reserved.</p>
+          <p className="text-primary font-semibold tracking-[0.4em] uppercase">© 2025 {BRAND_TITLE} Limited. All Rights Reserved.</p>
           <p>Your trusted partner in forex trading excellence.</p>
         </div>
       </div>

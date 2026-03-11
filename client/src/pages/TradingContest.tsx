@@ -1,5 +1,6 @@
 import PublicHeader from "@/components/PublicHeader";
 import Footer from "@/components/Footer";
+import { BRAND_TITLE } from "@/lib/brand";
 import AnimatedGrid from "@/components/AnimatedGrid";
 import ParticleField from "@/components/ParticleField";
 import { motion } from "framer-motion";
@@ -63,7 +64,7 @@ export default function TradingContest() {
             
             {/* Main Title - Golden Ratio: 16px * 1.618^3 = ~67px (closest: 4.25rem = 68px) */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.25rem] font-bold mb-6 sm:mb-8 md:mb-[4.236rem] leading-[1.2] tracking-tight px-4">
-              Rozka Capitals <span className="block mt-4 sm:mt-6 md:mt-6 text-gradient-animated text-glow-gold inline-block pb-2">Trading Contest</span>
+              {BRAND_TITLE} <span className="block mt-4 sm:mt-6 md:mt-6 text-gradient-animated text-glow-gold inline-block pb-2">Trading Contest</span>
             </h1>
             
             {/* Description - Golden Ratio: 16px * 1.618^1 = ~26px (closest: 1.625rem = 26px) */}

@@ -1,3 +1,5 @@
+import { BRAND_TITLE } from "@/lib/brand";
+
 interface LogoProps {
   className?: string;
   showText?: boolean;
@@ -26,7 +28,7 @@ export default function Logo({
       <div className={`relative ${iconSizeMap[size]}`}>
         <img
           src="/ROZKA.png"
-          alt="Rozka Capitals logo"
+          alt="R.O.Z.K.A CAPTIAL logo"
           className="w-full h-full object-contain"
         />
       </div>
@@ -35,7 +37,7 @@ export default function Logo({
           className={`font-serif font-bold ${textSizeMap[size]} text-[#D4AF37] uppercase tracking-wider`}
           style={{ color: '#D4AF37' }}
         >
-          ROZKA CAPITALS
+          {BRAND_TITLE}
         </span>
       )}
     </div>

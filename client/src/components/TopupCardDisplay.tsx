@@ -20,7 +20,7 @@ export default function TopupCardDisplay({
   pin,
   amount,
   status,
-  cardHolderName = "Rozka Capitals Limited",
+  cardHolderName = "R.O.Z.K.A CAPTIAL Limited",
   expiryMonth = "12",
   expiryYear = "2025",
   className = "",
@@ -82,7 +82,7 @@ export default function TopupCardDisplay({
                 <span className="text-2xl font-bold text-black">M</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xs font-semibold text-yellow-300">Rozka Capitals</span>
+                <span className="text-xs font-semibold text-yellow-300">R.O.Z.K.A CAPTIAL</span>
                 <span className="text-[10px] text-yellow-400/80">Limited</span>
               </div>
             </div>

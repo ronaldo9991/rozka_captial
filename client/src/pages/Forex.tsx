@@ -1,5 +1,6 @@
 import PublicHeader from "@/components/PublicHeader";
 import Footer from "@/components/Footer";
+import { BRAND_TITLE } from "@/lib/brand";
 import { motion } from "framer-motion";
 import { 
   TrendingUp, 
@@ -509,7 +510,7 @@ export default function Forex() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              The Benefits of Forex in <span className="text-gradient-gold text-glow-gold inline-block pb-1">Rozka Capitals</span>
+              The Benefits of Forex in <span className="text-gradient-gold text-glow-gold inline-block pb-1">{BRAND_TITLE}</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We prioritise our investors' needs and support them with superior technology and advantages
