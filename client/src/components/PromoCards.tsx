@@ -30,7 +30,7 @@ export default function PromoCards() {
     {
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&auto=format&fit=crop",
       title: "COMPETITIVE SPREADS",
-      description: "Reduce your trading costs and take advantage of tight spreads R.O.Z.K.A CAPTIAL offers.",
+      description: "Reduce your trading costs and take advantage of tight spreads ROZKA CAPTIALS offers.",
       cta: "DETAILS",
       scrollTo: "compare-spreads",
     },

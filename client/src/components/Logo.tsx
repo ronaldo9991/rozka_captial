@@ -28,7 +28,7 @@ export default function Logo({
       <div className={`relative ${iconSizeMap[size]}`}>
         <img
           src="/ROZKA.png"
-          alt="R.O.Z.K.A CAPTIAL logo"
+          alt="ROZKA CAPTIALS logo"
           className="w-full h-full object-contain"
         />
       </div>

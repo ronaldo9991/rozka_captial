@@ -266,7 +266,7 @@ export default function AdminLogin() {
 
             {/* Footer */}
             <div className="mt-6 text-center text-xs text-gray-500">
-              <p>R.O.Z.K.A CAPTIAL Limited Administration</p>
+              <p>ROZKA CAPTIALS Limited Administration</p>
               <p className="mt-1">Secure • Encrypted • Audited</p>
             </div>
           </Card>

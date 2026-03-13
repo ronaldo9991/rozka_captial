@@ -1,6 +1,6 @@
-# R.O.Z.K.A CAPTIAL — Trading Platform
+# ROZKA CAPTIALS — Trading Platform
 
-A refined Web3-inspired front-end for the **R.O.Z.K.A CAPTIAL** (Rozka Capitals) trading ecosystem. This project delivers a full-stack trading platform with a black-and-gold palette, glassmorphism, animated grids, and immersive micro-interactions.
+A refined Web3-inspired front-end for the **ROZKA CAPTIALS** (Rozka Capitals) trading ecosystem. This project delivers a full-stack trading platform with a black-and-gold palette, glassmorphism, animated grids, and immersive micro-interactions.
 
 ## ✨ Highlights
 - **Modern hero experience** with particle fields, animated trading cards, and bold typography.

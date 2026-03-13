@@ -8,7 +8,7 @@ export default function CorporateServices() {
   const services = [
     {
       icon: Users,
-      title: "R.O.Z.K.A CAPTIAL IB",
+      title: "ROZKA CAPTIALS IB",
       subtitle: "Introducing Broker Program",
       description: "Rozka Capitals IB's revenue sharing model will help your business grow beyond benchmark. Earn competitive commissions and enjoy dedicated support.",
       features: [
@@ -24,7 +24,7 @@ export default function CorporateServices() {
     },
     {
       icon: Headphones,
-      title: "R.O.Z.K.A CAPTIAL Support",
+      title: "ROZKA CAPTIALS Support",
       subtitle: "Tailored Business Solutions",
       description: "Our Rozka Capitals team will analyse your customer and business structure to setup the most rewarding and efficient solution for your needs.",
       features: [
@@ -40,7 +40,7 @@ export default function CorporateServices() {
     },
     {
       icon: Network,
-      title: "R.O.Z.K.A CAPTIAL Prime",
+      title: "ROZKA CAPTIALS Prime",
       subtitle: "Institutional Services",
       description: "Support your business with technology driven FX clearing and ECN based liquidity pools. Professional-grade infrastructure for institutions.",
       features: [
@@ -71,7 +71,7 @@ export default function CorporateServices() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-primary">Partner With</span> R.O.Z.K.A CAPTIAL
+            <span className="text-primary">Partner With</span> ROZKA CAPTIALS
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We offer tailor-made partnership opportunities for mutual interest and long-term success
