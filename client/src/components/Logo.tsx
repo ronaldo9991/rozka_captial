@@ -7,15 +7,15 @@ interface LogoProps {
 }
 
 const iconSizeMap: Record<NonNullable<LogoProps["size"]>, string> = {
-  sm: "w-16 h-12 sm:w-20 sm:h-14",
-  md: "w-20 h-14 sm:w-24 sm:h-16",
-  lg: "w-24 h-16 sm:w-28 sm:h-20",
+  sm: "w-10 h-10 sm:w-12 sm:h-12",
+  md: "w-12 h-12 sm:w-14 sm:h-14",
+  lg: "w-14 h-14 sm:w-16 sm:h-16",
 };
 
 const textSizeMap: Record<NonNullable<LogoProps["size"]>, string> = {
-  sm: "text-lg",
-  md: "text-xl",
-  lg: "text-2xl",
+  sm: "text-base sm:text-lg",
+  md: "text-lg sm:text-xl",
+  lg: "text-xl sm:text-2xl",
 };
 
 export default function Logo({
@@ -24,12 +24,12 @@ export default function Logo({
   size = "md",
 }: LogoProps) {
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
-      <div className={`relative ${iconSizeMap[size]}`}>
+    <div className={`flex items-center gap-2.5 sm:gap-3 ${className}`}>
+      <div className={`relative shrink-0 ${iconSizeMap[size]}`}>
         <img
-          src="/rozka_new.jpeg"
+          src="/rozka_1.png"
           alt="ROZKA CAPTIALS logo"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain object-center"
         />
       </div>
       {showText && (
