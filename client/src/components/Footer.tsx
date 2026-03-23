@@ -133,10 +133,7 @@ export default function Footer() {
                   <span className="text-primary font-medium"> 2024-00682</span>.
                 </p>
                 <p>
-                  <span className="font-medium text-foreground">Registered Address:</span> Ground Floor, The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia.
-                </p>
-                <p>
-                  <span className="font-medium text-foreground">Operational Address:</span> Office number 202, Blue Tower, Sheikh Zayed Road, UAE.
+                  <span className="font-medium text-foreground">Location:</span> Dubai, United Arab Emirates.
                 </p>
               </div>
               <div className="space-y-3">
@@ -171,13 +168,12 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Office+202+Blue+Tower+Sheikh+Zayed+Road+United+Arab+Emirates"
+                  href="https://www.google.com/maps/search/?api=1&query=Dubai+United+Arab+Emirates"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-white leading-relaxed hover:text-white/80 transition-colors cursor-pointer"
                 >
-                  Office 202, Blue Tower
-                  <br /> Sheikh Zayed Road, United Arab Emirates
+                  Dubai, United Arab Emirates
                 </a>
               </div>
             </div>

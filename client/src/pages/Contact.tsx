@@ -187,34 +187,19 @@ export default function Contact() {
 
               <div className="glass-morphism-strong border border-primary/20 rounded-3xl p-8 shadow-2xl">
                 <h2 className="text-2xl font-bold mb-6 text-gradient-gold text-glow-gold">
-                  Global Offices
+                  Location
                 </h2>
                 <div className="space-y-6 text-sm leading-relaxed text-muted-foreground">
                   <div>
                     <p className="font-semibold text-foreground mb-1 flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-primary" /> Registered Office
+                      <MapPin className="w-4 h-4 text-primary" /> Office Location
                     </p>
                     <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Ground+Floor+The+Sotheby+Building+Rodney+Village+Rodney+Bay+Gros+Islet+Saint+Lucia"
+                      href="https://www.google.com/maps/search/?api=1&query=Dubai+United+Arab+Emirates"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors cursor-pointer"
                     >
-                      <p>Ground Floor, The Sotheby Building, Rodney Village,</p>
-                      <p>Rodney Bay, Gros-Islet, Saint Lucia</p>
-                    </a>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground mb-1 flex items-center gap-2">
-                      <Globe className="w-4 h-4 text-primary" /> Operational Office
-                    </p>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Office+202+Blue+Tower+Sheikh+Zayed+Road+Dubai+United+Arab+Emirates"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-primary transition-colors cursor-pointer"
-                    >
-                      <p>Office 202, Blue Tower, Sheikh Zayed Road,</p>
                       <p>Dubai, United Arab Emirates</p>
                     </a>
                   </div>
