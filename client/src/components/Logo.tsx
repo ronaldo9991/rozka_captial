@@ -34,8 +34,8 @@ export default function Logo({
       </div>
       {showText && (
         <span
-          className={`font-serif font-bold ${textSizeMap[size]} text-[#D4AF37] uppercase tracking-wider`}
-          style={{ color: '#D4AF37' }}
+          className={`font-serif font-bold ${textSizeMap[size]} text-white uppercase tracking-wider`}
+          style={{ color: '#FFFFFF' }}
         >
           {BRAND_TITLE}
         </span>
