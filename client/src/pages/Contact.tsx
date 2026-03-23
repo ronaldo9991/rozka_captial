@@ -17,7 +17,6 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import {
   Mail,
-  Phone,
   MapPin,
   Headphones,
   Clock,
@@ -98,20 +97,13 @@ export default function Contact() {
       <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pb-16 md:pb-20">
         <div className="container mx-auto max-w-7xl">
           {/* Quick Contact Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-16">
             {[
               {
                 icon: Headphones,
                 title: "24/7 Support",
                 description: "Live chat & callback assistance",
                 isClickable: false,
-              },
-              {
-                icon: Phone,
-                title: "Call UAE Hotline",
-                description: "+971 54 719 9005",
-                isClickable: true,
-                link: "tel:+971547199005",
               },
               {
                 icon: Mail,
@@ -177,26 +169,6 @@ export default function Contact() {
                     <div>
                       <p className="text-sm text-muted-foreground">Live Chat & Ticketing</p>
                       <p className="font-semibold">24/7 via client portal</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Phone className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">Phone Support</p>
-                      <div className="font-semibold space-y-1">
-                        <div>
-                          <a href="tel:+971547199005" className="hover:text-primary transition-colors">
-                            +971 54 719 9005
-                          </a>
-                        </div>
-                        <div>
-                          <a href="tel:+97143884268" className="hover:text-primary transition-colors">
-                            +971 43 88 4268
-                          </a>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -301,7 +273,7 @@ export default function Contact() {
                       id="phone"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      placeholder="+971 54 719 9005"
+                      placeholder="Enter your phone number"
                       data-testid="input-phone"
                     />
                   </div>

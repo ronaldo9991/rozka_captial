@@ -19,7 +19,6 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import {
   Mail,
-  Phone,
   FileText,
   AlertCircle,
   Shield,
@@ -103,12 +102,12 @@ export default function Complaints() {
               {
                 icon: Mail,
                 title: "Complaint Email",
-                description: "complains@rozkacapitals.com",
+                description: "support@rozkacapitals.com",
               },
               {
                 icon: AlertCircle,
                 title: "Report Abuse",
-                description: "abuse@rozkacapitals.com",
+                description: "info@rozkacapitals.com",
               },
               {
                 icon: Clock,
@@ -158,8 +157,8 @@ export default function Complaints() {
                   <p>
                     If you have any query regarding your account, or you are dissatisfied with our Services, 
                     in the first instance you should contact our Customer Support Department via e-mail at 
-                    <a href="mailto:complains@rozkacapitals.com" className="text-primary hover:underline font-medium ml-1">
-                      complains@rozkacapitals.com
+                    <a href="mailto:support@rozkacapitals.com" className="text-primary hover:underline font-medium ml-1">
+                      support@rozkacapitals.com
                     </a>
                     , live chat, telephone or any other official method of communication made available by the Company.
                   </p>
@@ -182,10 +181,10 @@ export default function Complaints() {
                     <div>
                       <p className="text-sm text-muted-foreground">Complaint Email</p>
                       <a
-                        href="mailto:complains@rozkacapitals.com"
+                        href="mailto:support@rozkacapitals.com"
                         className="font-semibold text-primary hover:underline"
                       >
-                        complains@rozkacapitals.com
+                        support@rozkacapitals.com
                       </a>
                     </div>
                   </div>
@@ -196,28 +195,11 @@ export default function Complaints() {
                     <div>
                       <p className="text-sm text-muted-foreground">Report Abuse</p>
                       <a
-                        href="mailto:abuse@rozkacapitals.com"
+                        href="mailto:info@rozkacapitals.com"
                         className="font-semibold text-primary hover:underline"
                       >
-                        abuse@rozkacapitals.com
+                        info@rozkacapitals.com
                       </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Phone className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">Phone Support</p>
-                      <p className="font-semibold">
-                        <a href="tel:+971547199005" className="hover:text-primary transition-colors">
-                          +971 54 719 9005
-                        </a>
-                        {" • "}
-                        <a href="tel:+97143884268" className="hover:text-primary transition-colors">
-                          +971 43 88 4268
-                        </a>
-                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -299,7 +281,7 @@ export default function Complaints() {
                         id="phone"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        placeholder="+971 54 719 9005"
+                      placeholder="Enter your phone number"
                       />
                     </div>
                     <div>

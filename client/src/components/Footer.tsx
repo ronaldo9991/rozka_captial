@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import { BRAND_TITLE } from "@/lib/brand";
 import { Link } from "wouter";
-import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 const companyLinks = [
   { label: "About Us", href: "/about" },
@@ -158,19 +158,6 @@ export default function Footer() {
           <div className="glass-morphism border border-primary/20 rounded-3xl p-8 space-y-6">
             <h4 className="text-lg font-semibold text-gradient-gold text-glow-gold">Contact Us</h4>
             <div className="space-y-4 text-sm text-muted-foreground">
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/30">
-                  <Phone className="w-4 h-4 text-primary" />
-                </div>
-                <div className="flex flex-col gap-1">
-                  <a href="tel:+97143884268" className="text-white font-medium hover:text-white/80 transition-colors">
-                    +971 43 88 4268
-                  </a>
-                  <a href="tel:+971547199005" className="text-white font-medium hover:text-white/80 transition-colors">
-                    +971 54 719 9005
-                  </a>
-                </div>
-              </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/30">
                   <Mail className="w-4 h-4 text-primary" />

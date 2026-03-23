@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 export default function WhatsAppFloat() {
   const [isVisible, setIsVisible] = useState(true);
-  const whatsappNumber = "+971547199005"; // +971 54 719 9005
+  const supportEmail = "support@rozkacapitals.com";
   const message = "Hi, I need help with Rozka Capitals Trading";
 
   const handleWhatsAppClick = () => {
-    const url = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
+    const url = `mailto:${supportEmail}?subject=${encodeURIComponent("Support Request")}&body=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 
