@@ -27,7 +27,7 @@ export default function Logo({
     <div className={`flex items-center gap-3 ${className}`}>
       <div className={`relative ${iconSizeMap[size]}`}>
         <img
-          src="/ROZKA.png"
+          src="/rozka_new.jpeg"
           alt="ROZKA CAPTIALS logo"
           className="w-full h-full object-contain"
         />
