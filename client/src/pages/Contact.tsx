@@ -20,7 +20,6 @@ import {
   MapPin,
   Headphones,
   Clock,
-  Globe,
   MessageCircle,
   Shield,
 } from "lucide-react";
@@ -192,15 +191,17 @@ export default function Contact() {
                 <div className="space-y-6 text-sm leading-relaxed text-muted-foreground">
                   <div>
                     <p className="font-semibold text-foreground mb-1 flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-primary" /> Office Location
+                      <MapPin className="w-4 h-4 text-primary" /> Office Address
                     </p>
                     <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Dubai+United+Arab+Emirates"
+                      href="https://www.google.com/maps/search/?api=1&query=Rozka+Capitals+Limited+Ground+Floor+The+Sotheby+Building+Rodney+Village+Rodney+Bay+Gros-Islet+Saint+Lucia"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors cursor-pointer"
                     >
-                      <p>Dubai, United Arab Emirates</p>
+                      <p>Rozka Capitals Limited</p>
+                      <p>Ground Floor, The Sotheby Building,</p>
+                      <p>Rodney Village, Rodney Bay, Gros-Islet Saint Lucia.</p>
                     </a>
                   </div>
                   <div>

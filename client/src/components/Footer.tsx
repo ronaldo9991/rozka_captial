@@ -133,7 +133,7 @@ export default function Footer() {
                   <span className="text-primary font-medium"> 2024-00682</span>.
                 </p>
                 <p>
-                  <span className="font-medium text-foreground">Location:</span> Dubai, United Arab Emirates.
+                  <span className="font-medium text-foreground">Address:</span> Rozka Capitals Limited, Ground Floor, The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet Saint Lucia.
                 </p>
               </div>
               <div className="space-y-3">
@@ -168,12 +168,14 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Dubai+United+Arab+Emirates"
+                  href="https://www.google.com/maps/search/?api=1&query=Rozka+Capitals+Limited+Ground+Floor+The+Sotheby+Building+Rodney+Village+Rodney+Bay+Gros-Islet+Saint+Lucia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-white leading-relaxed hover:text-white/80 transition-colors cursor-pointer"
                 >
-                  Dubai, United Arab Emirates
+                  Rozka Capitals Limited
+                  <br /> Ground Floor, The Sotheby Building,
+                  <br /> Rodney Village, Rodney Bay, Gros-Islet Saint Lucia.
                 </a>
               </div>
             </div>
