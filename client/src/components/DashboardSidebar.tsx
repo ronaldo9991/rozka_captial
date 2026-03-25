@@ -105,8 +105,9 @@ export default function DashboardSidebar() {
             target={item.external ? "_blank" : undefined}
             rel={item.external ? "noopener noreferrer" : undefined}
             className={cn(
-              "relative flex flex-col items-center justify-center gap-1 px-3 py-2 rounded-lg",
-              "transition-colors duration-200 group/item min-w-[70px]",
+              // Keep every menu tile perfectly aligned in the fixed 64px header.
+              "relative flex flex-col items-center justify-center gap-1 px-2 py-1.5 rounded-lg",
+              "transition-colors duration-200 group/item min-w-[88px] h-12",
               "border border-transparent",
               isActive 
                 ? "bg-primary/15 border-primary/30 text-primary" 
@@ -127,6 +128,7 @@ export default function DashboardSidebar() {
             <span
               className={cn(
                 "text-[10px] font-medium uppercase tracking-wider transition-colors duration-200",
+                "whitespace-nowrap leading-none",
                 isActive && "text-primary font-semibold"
               )}
             >
@@ -271,11 +273,13 @@ export default function DashboardSidebar() {
           </motion.div>
 
           {/* Main Navigation - All Items Visible */}
-          <div className="hidden md:flex items-center gap-1.5 flex-1 justify-center min-w-0 px-2">
+          <div className="hidden md:flex items-center gap-1.5 flex-1 justify-start min-w-0 px-2">
             {/* Main Navigation Items */}
             <div className="flex items-center gap-1">
               {mainNavItems.map((item) => {
-                const isActive = location === item.url;
+                const isActive =
+                  !item.external &&
+                  (item.url === "/dashboard" ? location === item.url : location.startsWith(item.url));
                 return (
                   <FuturisticNavItem
                     key={item.title}
@@ -295,7 +299,7 @@ export default function DashboardSidebar() {
               <DropdownMenuTrigger asChild>
                 <motion.button
                   className={cn(
-                    "relative flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-all duration-300 min-w-[70px]",
+                    "relative flex flex-col items-center gap-1 px-2 py-1.5 rounded-lg transition-all duration-300 min-w-[88px] h-12",
                     "border border-transparent",
                     "hover:bg-primary/10 hover:border-primary/20 hover:text-primary text-foreground/70",
                     (location.startsWith("/dashboard/internal-transfer") || 
@@ -316,9 +320,11 @@ export default function DashboardSidebar() {
                       ease: "linear",
                     }}
                   >
-                    <ArrowRightLeft className="w-5 h-5" />
+                    <ArrowRightLeft className="w-4 h-4" />
                   </motion.div>
-                  <span className="text-[10px] font-medium uppercase tracking-wider">Transfers</span>
+                  <span className="text-[10px] font-medium uppercase tracking-wider whitespace-nowrap leading-none">
+                    Transfers
+                  </span>
                 </motion.button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="center" className="w-56 bg-sidebar/95 backdrop-blur-xl border-primary/30">
@@ -351,7 +357,7 @@ export default function DashboardSidebar() {
               <DropdownMenuTrigger asChild>
                 <motion.button
                   className={cn(
-                    "relative flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-all duration-300 min-w-[70px]",
+                    "relative flex flex-col items-center gap-1 px-2 py-1.5 rounded-lg transition-all duration-300 min-w-[88px] h-12",
                     "border border-transparent",
                     "hover:bg-primary/10 hover:border-primary/20 hover:text-primary text-foreground/70",
                     (location.startsWith("/dashboard/documents") ||
@@ -376,7 +382,9 @@ export default function DashboardSidebar() {
                   >
                     <User className="w-5 h-5" />
                   </motion.div>
-                  <span className="text-[10px] font-medium uppercase tracking-wider">Account</span>
+                  <span className="text-[10px] font-medium uppercase tracking-wider whitespace-nowrap leading-none">
+                    Account
+                  </span>
                 </motion.button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="center" className="w-56 bg-sidebar/95 backdrop-blur-xl border-primary/30">
