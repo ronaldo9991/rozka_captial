@@ -191,7 +191,7 @@ export default function Contact() {
                 <div className="space-y-6 text-sm leading-relaxed text-muted-foreground">
                   <div>
                     <p className="font-semibold text-foreground mb-1 flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-primary" /> Office Address
+                      <MapPin className="w-4 h-4 text-primary" /> Registered address
                     </p>
                     <a 
                       href="https://www.google.com/maps/search/?api=1&query=Rozka+Capitals+Limited+Ground+Floor+The+Sotheby+Building+Rodney+Village+Rodney+Bay+Gros-Islet+Saint+Lucia"
@@ -202,6 +202,21 @@ export default function Contact() {
                       <p>Rozka Capitals Limited</p>
                       <p>Ground Floor, The Sotheby Building,</p>
                       <p>Rodney Village, Rodney Bay, Gros-Islet Saint Lucia.</p>
+                    </a>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1 flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-primary" /> Physical office
+                    </p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Office+3118+107+Kievskaia+Street+Bishkek+Kyrgyzstan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors cursor-pointer"
+                    >
+                      <p>Office No. 3118, 3rd Floor,</p>
+                      <p>107 Kievskaia Street,</p>
+                      <p>Bishkek, Kyrgyzstan</p>
                     </a>
                   </div>
                   <div>

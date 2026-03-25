@@ -133,7 +133,10 @@ export default function Footer() {
                   <span className="text-primary font-medium"> 2024-00682</span>.
                 </p>
                 <p>
-                  <span className="font-medium text-foreground">Address:</span> Rozka Capitals Limited, Ground Floor, The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet Saint Lucia.
+                  <span className="font-medium text-foreground">Registered address:</span> Rozka Capitals Limited, Ground Floor, The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet Saint Lucia.
+                </p>
+                <p>
+                  <span className="font-medium text-foreground">Physical office:</span> Office No. 3118, 3rd Floor, 107 Kievskaia Street, Bishkek, Kyrgyzstan.
                 </p>
               </div>
               <div className="space-y-3">
@@ -173,9 +176,26 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-white leading-relaxed hover:text-white/80 transition-colors cursor-pointer"
                 >
+                  <span className="text-primary/90 text-xs uppercase tracking-wider block mb-1">Registered</span>
                   Rozka Capitals Limited
                   <br /> Ground Floor, The Sotheby Building,
                   <br /> Rodney Village, Rodney Bay, Gros-Islet Saint Lucia.
+                </a>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/30">
+                  <MapPin className="w-4 h-4 text-primary" />
+                </div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Office+3118+107+Kievskaia+Street+Bishkek+Kyrgyzstan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white leading-relaxed hover:text-white/80 transition-colors cursor-pointer"
+                >
+                  <span className="text-primary/90 text-xs uppercase tracking-wider block mb-1">Physical office</span>
+                  Office No. 3118, 3rd Floor,
+                  <br /> 107 Kievskaia Street,
+                  <br /> Bishkek, Kyrgyzstan
                 </a>
               </div>
             </div>
