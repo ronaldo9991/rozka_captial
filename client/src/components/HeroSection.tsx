@@ -18,7 +18,6 @@ export default function HeroSection() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ opacity: 0.4 }}
         >
-          <source src="/videos/2.mp4" type="video/mp4" />
           <source src="/videos/herosectionvideo2.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for text readability */}

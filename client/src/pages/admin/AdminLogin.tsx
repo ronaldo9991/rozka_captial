@@ -123,16 +123,10 @@ export default function AdminLogin() {
     <div className="min-h-screen flex relative">
       {/* Full-Screen Trading Wallpaper Background */}
       <div className="fixed inset-0 w-full h-full z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ opacity: 0.4 }}
-        >
-          <source src="/videos/herosectionvideo2.mp4" type="video/mp4" />
-        </video>
+        <div
+          className="absolute inset-0 w-full h-full bg-gradient-to-br from-black via-background to-black"
+          style={{ opacity: 0.92 }}
+        />
         {/* Gradient overlay for better text readability */}
         <div 
           className="absolute inset-0"
