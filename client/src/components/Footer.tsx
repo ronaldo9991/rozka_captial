@@ -27,7 +27,13 @@ const forexLinks = [
   { label: "Deposits & Withdrawals", href: "/forex#deposits" },
 ];
 
-const legalLinks: Array<{ label: string; href: string; external?: boolean }> = [];
+const legalLinks = [
+  { label: "Risk Warning", href: "/risk_disclosure_and_warning_notice.pdf", external: true },
+  { label: "Anti Money Laundering", href: "/anti_money_laundering.pdf", external: true },
+  { label: "Privacy Policy", href: "/privacy_agreement.pdf", external: true },
+  { label: "Terms & Conditions", href: "/terms_conditions.pdf", external: true },
+  { label: "Complaints", href: "/complaints" },
+];
 
 export default function Footer() {
   const renderLink = (
@@ -142,13 +148,11 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            {legalLinks.length > 0 && (
-              <div className="mt-6 flex flex-wrap gap-4 text-xs text-muted-foreground">
-                {legalLinks.map((link, index) => (
-                  <div key={link.label}>{renderLink(link, index)}</div>
-                ))}
-              </div>
-            )}
+            <div className="mt-6 flex flex-wrap gap-4 text-xs text-muted-foreground">
+              {legalLinks.map((link, index) => (
+                <div key={link.label}>{renderLink(link, index)}</div>
+              ))}
+            </div>
           </div>
 
           <div className="glass-morphism border border-primary/20 rounded-3xl p-8 space-y-6">
