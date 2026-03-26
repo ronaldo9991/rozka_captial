@@ -29,7 +29,7 @@ const forexLinks = [
 
 const legalLinks = [
   { label: "Risk Warning", href: "/risk_disclosure_and_warning_notice.pdf", external: true },
-  { label: "Anti Money Laundering", href: "/anti_money_laundering.pdf", external: true },
+  { label: "Anti Money Laundering", href: "/rozka-capitals-aml-policy.pdf", external: true },
   { label: "Privacy Policy", href: "/privacy_agreement.pdf", external: true },
   { label: "Terms & Conditions", href: "/terms_conditions.pdf", external: true },
   { label: "Complaints", href: "/complaints" },
