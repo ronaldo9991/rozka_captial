@@ -29,13 +29,13 @@ function getLogoBase64(): string {
   if (!LOGO_BASE64) {
     try {
       // Use uploaded logo from root directory
-      const logoPath = join(process.cwd(), 'rozka_1.png');
+      const logoPath = join(process.cwd(), 'rozzka.png');
       const logoBuffer = readFileSync(logoPath);
       LOGO_BASE64 = `data:image/png;base64,${logoBuffer.toString('base64')}`;
     } catch (error) {
       console.error('Failed to load logo for email:', error);
       // Fallback to URL if file not found
-      LOGO_BASE64 = `${FRONTEND_URL}/rozka_1.png`;
+      LOGO_BASE64 = `${FRONTEND_URL}/rozzka.png`;
     }
   }
   return LOGO_BASE64;
