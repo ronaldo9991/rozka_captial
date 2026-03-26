@@ -1,0 +1,15 @@
+# Crypto Wallet Addresses from Screenshots
+# Please paste the wallet addresses from your three screenshots below:
+
+# Bitcoin (BTC) Wallet Address:
+# (Should start with 1, 3, or bc1)
+BTC_ADDRESS=
+
+# USDT-BEP20 Wallet Address:
+# (Should start with 0x)
+USDT_BEP20_ADDRESS=
+
+# USDT-TRC20 Wallet Address:
+# (Should start with T)
+USDT_TRC20_ADDRESS=
+

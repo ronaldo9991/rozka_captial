@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "functions": {
+    "api/server.ts": {
+      "runtime": "@vercel/node@5.5.4",
+      "includeFiles": "{dist/**,server/public/**}"
+    }
+  },
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(?:ico|png|jpg|jpeg|svg|webp|gif))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(css|js))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/server.ts" }
+  ]
+}

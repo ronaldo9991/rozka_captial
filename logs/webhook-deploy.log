@@ -1,0 +1,116 @@
+[2025-12-03 17:06:45] 🚀 Webhook deployment triggered
+[2025-12-03 17:06:45] 📥 Executing deploy-live.sh...
+🚀 Starting Live Deployment...
+
+[0;34m📥 Step 1: Pulling latest code from master...[0m
+Already on 'master'
+M	package-lock.json
+M	package.json
+M	server/routes.ts
+Your branch is up to date with 'origin/master'.
+Saved working directory and index state On master: Auto-stash before deployment 20251203-170646
+From github.com:ronaldo9991/mekness
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+[0;32m✅ Git pull completed in 1s[0m
+
+[0;34m📦 Step 2: Checking dependencies...[0m
+   No dependency changes, skipping npm ci
+
+[0;34m🔨 Step 3: Building application...[0m
+
+> rest-express@1.0.0 build
+> npm run build:frontend && npm run build:backend
+
+
+> rest-express@1.0.0 build:frontend
+> vite build
+
+vite v5.4.20 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 14 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+warn - The class `duration-[1200ms]` is ambiguous and matches multiple utilities.
+warn - If this is content and not a class, replace it with `duration-&lsqb;1200ms&rsqb;` to silence this warning.
+
+A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+✓ 2544 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/public/index.html                                    1.89 kB │ gzip:   0.74 kB
+../dist/public/assets/index-BNRkwnNd.css                   159.58 kB │ gzip:  23.05 kB
+../dist/public/assets/label-YsNbjVjS.js                      0.37 kB │ gzip:   0.27 kB
+../dist/public/assets/SignIn-B8c9qSLe.js                     0.52 kB │ gzip:   0.32 kB
+../dist/public/assets/SignUp-Di8XoePB.js                     0.52 kB │ gzip:   0.32 kB
+../dist/public/assets/textarea-CC8bJK0N.js                   0.57 kB │ gzip:   0.36 kB
+../dist/public/assets/CountingNumber-ColSFzKj.js             0.66 kB │ gzip:   0.45 kB
+../dist/public/assets/input-BJvSTN_b.js                      0.66 kB │ gzip:   0.39 kB
+../dist/public/assets/Logo-BpBG_B85.js                       0.67 kB │ gzip:   0.43 kB
+../dist/public/assets/badge-BuGlZLWw.js                      0.77 kB │ gzip:   0.42 kB
+../dist/public/assets/card-B3Mk7o0r.js                       1.08 kB │ gzip:   0.40 kB
+../dist/public/assets/button-DvY5ufWW.js                     1.25 kB │ gzip:   0.63 kB
+../dist/public/assets/AnimatedGrid-CCtPF_MY.js               1.30 kB │ gzip:   0.55 kB
+../dist/public/assets/AccountContext-B5EIRQyL.js             1.31 kB │ gzip:   0.64 kB
+../dist/public/assets/ParticleField-XAts60NC.js              1.63 kB │ gzip:   0.82 kB
+../dist/public/assets/StatCard-D1SeeBix.js                   1.81 kB │ gzip:   0.76 kB
+../dist/public/assets/dialog-DIm20bzG.js                     2.25 kB │ gzip:   0.88 kB
+../dist/public/assets/sheet-677VsvFC.js                      2.30 kB │ gzip:   0.91 kB
+../dist/public/assets/AdminLogin-ZwY1hdK4.js                 3.03 kB │ gzip:   1.35 kB
+../dist/public/assets/select-C0GFo_Uj.js                     3.14 kB │ gzip:   1.14 kB
+../dist/public/assets/not-found-SH_YbMUx.js                  4.27 kB │ gzip:   1.54 kB
+../dist/public/assets/TradingHistory-CtkFr3us.js             5.00 kB │ gzip:   1.61 kB
+../dist/public/assets/Downloads-Bx3Msdt-.js                  5.08 kB │ gzip:   1.75 kB
+../dist/public/assets/TradingContest-Bpc-rV7V.js             6.38 kB │ gzip:   2.12 kB
+../dist/public/assets/Withdraw-BOtj0eFp.js                   6.61 kB │ gzip:   2.28 kB
+../dist/public/assets/Profile-Dkj-Eyre.js                    7.65 kB │ gzip:   2.13 kB
+../dist/public/assets/InternalTransfer-_s-p2WVJ.js           7.83 kB │ gzip:   2.36 kB
+../dist/public/assets/SearchableCountrySelect-DSnbE1jt.js    8.12 kB │ gzip:   3.54 kB
+../dist/public/assets/Documents-DzEzsjhc.js                  8.37 kB │ gzip:   2.98 kB
+../dist/public/assets/ExternalTransfer-Binr2nML.js           9.01 kB │ gzip:   2.79 kB
+../dist/public/assets/IBAccount-BaTVeG6o.js                  9.79 kB │ gzip:   2.42 kB
+../dist/public/assets/TradingAccounts-BVRzj_ke.js           10.24 kB │ gzip:   2.82 kB
+../dist/public/assets/Complaints-wlTKVrd7.js                11.05 kB │ gzip:   3.12 kB
+../dist/public/assets/ButtonShowcase-C6PKDVph.js            11.42 kB │ gzip:   2.14 kB
+../dist/public/assets/NoDepositBonus-D7evKkA5.js            11.55 kB │ gzip:   3.32 kB
+../dist/public/assets/DepositsWithdrawals-BLhcdEx9.js       12.96 kB │ gzip:   3.54 kB
+../dist/public/assets/DepositBonus-RmatQBZU.js              13.65 kB │ gzip:   3.76 kB
+../dist/public/assets/Footer-B03oR8Lg.js                    13.87 kB │ gzip:   3.79 kB
+../dist/public/assets/IntroducingBroker-CIo5gV0F.js         14.16 kB │ gzip:   4.21 kB
+../dist/public/assets/Support-xRQ3eg-4.js                   14.57 kB │ gzip:   3.63 kB
+../dist/public/assets/ForexAdvantages-D1M7B-89.js           15.28 kB │ gzip:   4.91 kB
+../dist/public/assets/DashboardHome-D-sNSzyJ.js             16.88 kB │ gzip:   4.53 kB
+../dist/public/assets/Contact-B48OvtrV.js                   17.86 kB │ gzip:   5.32 kB
+../dist/public/assets/ForexPedia-DzdYwm0M.js                19.25 kB │ gzip:   5.76 kB
+../dist/public/assets/WhatIsForex-DFQjvkBb.js               21.60 kB │ gzip:   5.72 kB
+../dist/public/assets/purify.es-B6FQ9oRL.js                 22.57 kB │ gzip:   8.74 kB
+../dist/public/assets/DashboardLayout-CdpUnVuZ.js           25.67 kB │ gzip:   5.88 kB
+../dist/public/assets/About-BdlLN5Iw.js                     26.06 kB │ gzip:   6.38 kB
+../dist/public/assets/Forex-DDhIqXeU.js                     26.98 kB │ gzip:   6.17 kB
+../dist/public/assets/Deposit-CGzApDRG.js                   30.12 kB │ gzip:  10.13 kB
+../dist/public/assets/AuthCard-CduIqsMI.js                  32.97 kB │ gzip:  12.52 kB
+../dist/public/assets/index-DHuKyck3.js                     38.22 kB │ gzip:  12.97 kB
+../dist/public/assets/vendor-forms-CoQ6Iff5.js              38.66 kB │ gzip:  11.55 kB
+../dist/public/assets/Home-B6lsPIue.js                      52.87 kB │ gzip:  13.09 kB
+../dist/public/assets/vendor-ui-BH6A7dag.js                122.07 kB │ gzip:  39.14 kB
+../dist/public/assets/vendor-react-Dzg_eEbn.js             146.40 kB │ gzip:  47.84 kB
+../dist/public/assets/index.es-DW0xBRmw.js                 150.65 kB │ gzip:  51.51 kB
+../dist/public/assets/vendor-misc-DP7bYeKS.js              156.41 kB │ gzip:  46.16 kB
+../dist/public/assets/AdminDashboard-Cj5Me9Fz.js           180.78 kB │ gzip:  36.59 kB
+../dist/public/assets/html2canvas.esm-CBrSDip1.js          201.42 kB │ gzip:  48.03 kB
+../dist/public/assets/DataTable-Sn7QlFb3.js                709.88 kB │ gzip: 234.03 kB
+✓ built in 7.38s
+
+> rest-express@1.0.0 build:backend
+> esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --external:vite --external:@vitejs/* --external:@replit/* --external:../vite.config.js --outdir=dist --bundle=true && node scripts/sync-static.mjs
+
+
+  dist/index.js  191.9kb
+
+⚡ Done in 13ms
+sync-static: copied assets from /root/mekness/dist/public to /root/mekness/server/public
+[0;32m✅ Build completed in 8s[0m
+
+[0;34m🔄 Step 4: Restarting server...[0m
+[PM2] Applying action restartProcessId on app [mekness-api](ids: [ 0 ])

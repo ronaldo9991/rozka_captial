@@ -1,0 +1,35 @@
+[5:37 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Create admin differences
+[5:38 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Once it created and submit it cannot chages all logs admin ca see
+[5:39 pm, 1/11/2025] Alifka Iqbal Lazuardi R: What client doing
+[5:39 pm, 1/11/2025] Alifka Iqbal Lazuardi R: IB portal
+[5:39 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Internal and external transfer
+[5:40 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Dashboard, account detail, add standard/pro/VIP/startup and no depostie and demo Account
+[5:40 pm, 1/11/2025] Alifka Iqbal Lazuardi R: User- only change the password
+[5:40 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Very secure
+[5:42 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Make it beatiful for client
+[5:42 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Add animation
+[6:17 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Approval document from admin
+[6:17 pm, 1/11/2025] Alifka Iqbal Lazuardi R: There is super admin- see anything
+Admin - depending on the country
+[6:17 pm, 1/11/2025] Alifka Iqbal Lazuardi R: 2000-2500 + commision
+[6:17 pm, 1/11/2025] Alifka Iqbal Lazuardi R: 50$ trade, rules
+[6:17 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Deposite/no deposte bonus
+[6:17 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Copy trading
+[6:17 pm, 1/11/2025] Alifka Iqbal Lazuardi R: No deposite account - demo - learning
+Deposite account - real account
+[6:19 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Broker
+Introducer broker
+Make it shorter make it efficient
+[6:23 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Type account:
+- Startup account
+- Student account - academic student
+- ⁠VIP
+- ⁠PRO 
+- ⁠STANDARD
+- ⁠DEMO
+
+There is feature to add/modify type of account
+[6:25 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Client portal first register and see the flow/rules/regulation then open account
+
+In admin system it can be disable/able to account. But the user only get the message the wrong password, so user have no idea is the account is disable or not
+[6:28 pm, 1/11/2025] Alifka Iqbal Lazuardi R: Ib for admin Panel with access

@@ -1,0 +1,17 @@
+# Local development: PostgreSQL for Binofox
+# Run: docker compose up -d   (then: npm run dev)
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: binofox-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: binofox
+    ports:
+      - "5432:5432"
+    volumes:
+      - binofox_pgdata:/var/lib/postgresql/data
+
+volumes:
+  binofox_pgdata:
