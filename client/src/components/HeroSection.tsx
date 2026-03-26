@@ -7,7 +7,7 @@ import { Link } from "wouter";
 export default function HeroSection() {
   return (
     <div className="relative min-h-screen flex items-center overflow-hidden pt-24">
-      {/* Background gradient instead of video */}
+      {/* Background gradient */}
       <div className="absolute inset-0 w-full h-full">
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/75"></div>

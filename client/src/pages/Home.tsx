@@ -1,6 +1,5 @@
 import PublicHeader from "@/components/PublicHeader";
 import { BRAND_TITLE } from "@/lib/brand";
-import HeroSection from "@/components/HeroSection";
 import FeatureCards from "@/components/FeatureCards";
 import LiveTicker from "@/components/LiveTicker";
 import CTASection from "@/components/CTASection";
@@ -148,7 +147,7 @@ export default function Home() {
         {/* Base gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-black via-background to-black"></div>
         
-        {/* Background gradient instead of video - Rozka Capitals */}
+        {/* Hero background gradient */}
         <div className="absolute inset-0 w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/75"></div>
         </div>
