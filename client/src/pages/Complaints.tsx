@@ -22,7 +22,6 @@ import {
   FileText,
   AlertCircle,
   Shield,
-  Download,
   MessageCircle,
   Clock,
 } from "lucide-react";
@@ -214,28 +213,6 @@ export default function Complaints() {
                 </div>
               </div>
 
-              <div className="glass-morphism-strong border border-primary/20 rounded-3xl p-8 shadow-2xl">
-                <h2 className="text-2xl font-bold mb-6 text-gradient-gold text-glow-gold">
-                  Download Complaint Form
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                  You can download our official complaint form, fill it out, and send it back via email.
-                </p>
-                <Button
-                  asChild
-                  className="neon-gold magnetic-hover"
-                >
-                  <a
-                    href="/complaints_procedure.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    download
-                  >
-                    <Download className="w-4 h-4 mr-2" />
-                    Download PDF Form
-                  </a>
-                </Button>
-              </div>
             </motion.div>
 
             {/* Complaint Form */}

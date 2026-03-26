@@ -11,7 +11,7 @@ export default function PartnershipCards() {
   const partnerships = [
     {
       icon: Users,
-      image: "/mekness ib.jpg",
+      image: "/broad.png",
       label: "IB",
       sublabel: "Introducing Broker",
       title: "ROZKA CAPTIALS IB",
@@ -21,7 +21,7 @@ export default function PartnershipCards() {
     },
     {
       icon: TrendingUp,
-      image: "/mekness support.jpg",
+      image: "/vision.jpg",
       label: "",
       sublabel: "",
       title: "ROZKA CAPTIALS Support",
@@ -31,7 +31,7 @@ export default function PartnershipCards() {
     },
     {
       icon: Droplet,
-      image: "/mekness prime.jpg",
+      image: "/winning.jpg",
       label: "POP",
       sublabel: "Prime of Prime",
       title: "ROZKA CAPTIALS Prime",
@@ -55,7 +55,7 @@ export default function PartnershipCards() {
             <div className="flex items-center gap-4 mb-3">
               <div className="w-1 h-12 bg-primary"></div>
               <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
-                BECOME A PARTNER WITH <span className="text-gradient-gold text-glow-gold">MEKNESS</span>
+                BECOME A PARTNER WITH <span className="text-gradient-gold text-glow-gold">ROZKA CAPITALS</span>
               </h2>
             </div>
             <p className="text-muted-foreground ml-0 md:ml-8 max-w-2xl text-sm sm:text-base">

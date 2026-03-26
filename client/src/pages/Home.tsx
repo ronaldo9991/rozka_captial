@@ -158,7 +158,7 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover"
             style={{ opacity: 0.35 }}
           >
-            <source src="/videos/Mekness.mp4" type="video/mp4" />
+            <source src="/videos/herosectionvideo2.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/75"></div>
         </div>
