@@ -130,7 +130,7 @@ try {
         echo "4. Testing common group names...\n";
         $commonGroups = [
             'real', 'demo', 'default', 'Default', 'Standard', 'standard',
-            'Mekness-Standard', 'live', 'Live', 'Demo', 'retail', 'Retail',
+            'Rozka-Standard', 'live', 'Live', 'Demo', 'retail', 'Retail',
             'real\\USD', 'demo\\USD', 'live\\USD', 'clients', 'users'
         ];
         

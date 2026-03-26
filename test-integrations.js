@@ -55,7 +55,7 @@ async function testEmail() {
     const postData = JSON.stringify({
       to: 'test@example.com',
       subject: 'Test Email',
-      message: 'This is a test email from Mekness integration test.'
+      message: 'This is a test email from Rozka Capitals integration test.'
     });
 
     const options = {
@@ -124,9 +124,9 @@ function checkEmailConfig(resolve) {
     console.log('\n   Required variables:');
     console.log('   - SMTP_SERVER (default: smtp.eu.mailgun.org)');
     console.log('   - SMTP_PORT (default: 587)');
-    console.log('   - SMTP_LOGIN (e.g., accounts@mg.mekness.com)');
+    console.log('   - SMTP_LOGIN (e.g., postmaster@mg.yourdomain.com)');
     console.log('   - SMTP_PASSWORD');
-    console.log('   - SMTP_FROM (e.g., accounts@mg.mekness.com)');
+    console.log('   - SMTP_FROM (e.g., support@rozkacapitals.com)');
     resolve(false);
   }
 }

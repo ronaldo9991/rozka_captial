@@ -4,7 +4,7 @@
 
 set -e
 
-echo "🔧 Setting up EC2 instance for Mekness deployment..."
+echo "🔧 Setting up EC2 instance for Rozka Capitals deployment..."
 
 # Update system
 echo "📦 Updating system packages..."
@@ -39,15 +39,15 @@ sudo systemctl start nginx
 
 # Create app directory
 echo "📁 Creating application directory..."
-sudo mkdir -p /opt/mekness
-sudo chown $USER:$USER /opt/mekness
+sudo mkdir -p /opt/rozka_captial
+sudo chown $USER:$USER /opt/rozka_captial
 
 echo ""
 echo "✅ EC2 setup complete!"
 echo ""
 echo "Next steps:"
 echo "1. Clone your repository:"
-echo "   cd /opt/mekness"
+echo "   cd /opt/rozka_captial"
 echo "   git clone <your-repo-url> ."
 echo ""
 echo "2. Run deployment script:"

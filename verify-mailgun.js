@@ -11,9 +11,14 @@ console.log('🔍 Verifying Mailgun Email Service...\n');
 // Check environment variables
 const SMTP_SERVER = process.env.SMTP_SERVER || 'smtp.eu.mailgun.org';
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || '587');
-const SMTP_LOGIN = process.env.SMTP_LOGIN || 'accounts@mg.mekness.com';
-const SMTP_PASSWORD = process.env.SMTP_PASSWORD || 'i1KlRqiM7pCVvb7'; // Fallback from test script
-const SMTP_FROM = process.env.SMTP_FROM || 'accounts@mg.mekness.com';
+const SMTP_LOGIN = process.env.SMTP_LOGIN;
+const SMTP_PASSWORD = process.env.SMTP_PASSWORD;
+const SMTP_FROM = process.env.SMTP_FROM || 'support@rozkacapitals.com';
+
+if (!SMTP_LOGIN || !SMTP_PASSWORD) {
+  console.error('Set SMTP_LOGIN and SMTP_PASSWORD in the environment.');
+  process.exit(1);
+}
 
 console.log('📋 Configuration:');
 console.log('   SMTP Server:', SMTP_SERVER);
@@ -53,7 +58,7 @@ transporter.verify((error, success) => {
     // Test sending email
     console.log('📧 Testing Email Sending...');
     const testEmail = {
-      from: `"Mekness" <${SMTP_FROM}>`,
+      from: `"Rozka Capitals" <${SMTP_FROM}>`,
       to: 'test@example.com', // This won't actually send, just test the connection
       subject: 'Mailgun Verification Test',
       html: '<h1>Mailgun Test</h1><p>This is a test email to verify Mailgun is working.</p>',

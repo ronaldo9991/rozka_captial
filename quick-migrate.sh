@@ -22,7 +22,11 @@ npm run db:push
 
 echo ""
 echo "📋 Step 2: Migrating data..."
-export RAILWAY_DATABASE_URL="postgresql://postgres:YxscShUJpmgzIAvcjnVVkYeWZpPKUkKt@shuttle.proxy.rlwy.net:23811/railway"
+if [ -z "$RAILWAY_DATABASE_URL" ]; then
+  echo "❌ RAILWAY_DATABASE_URL not set (source Railway Postgres URL)."
+  exit 1
+fi
+export RAILWAY_DATABASE_URL
 node migrate-to-aws-rds.js
 
 echo ""
@@ -33,7 +37,7 @@ echo "   Update Railway Variables or .env file:"
 echo "   DATABASE_URL=$AWS_RDS_URL"
 echo ""
 echo "📋 Step 4: Restart server"
-echo "   pm2 restart mekness-api"
+echo "   pm2 restart rozka-api"
 
 
 

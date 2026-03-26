@@ -1,5 +1,5 @@
 #!/bin/bash
-# AWS EC2 Deployment Script for Mekness Trading Platform
+# AWS EC2 deployment script for Rozka Capitals
 # Usage: ./deploy-aws.sh
 
 set -e
@@ -52,12 +52,12 @@ EOF
 fi
 
 # Stop existing PM2 process if running
-pm2 stop mekness 2>/dev/null || true
-pm2 delete mekness 2>/dev/null || true
+pm2 stop rozka-api 2>/dev/null || true
+pm2 delete rozka-api 2>/dev/null || true
 
 # Start application with PM2
 echo "🚀 Starting application with PM2..."
-pm2 start dist/index.js --name mekness
+pm2 start dist/index.js --name rozka-api
 
 # Save PM2 configuration
 pm2 save
@@ -76,7 +76,7 @@ echo ""
 pm2 status
 echo ""
 echo -e "${GREEN}🌐 Your application should be running on port 5000${NC}"
-echo -e "${GREEN}📊 View logs: pm2 logs mekness${NC}"
-echo -e "${GREEN}🔄 Restart: pm2 restart mekness${NC}"
-echo -e "${GREEN}⏹️  Stop: pm2 stop mekness${NC}"
+echo -e "${GREEN}📊 View logs: pm2 logs rozka-api${NC}"
+echo -e "${GREEN}🔄 Restart: pm2 restart rozka-api${NC}"
+echo -e "${GREEN}⏹️  Stop: pm2 stop rozka-api${NC}"
 

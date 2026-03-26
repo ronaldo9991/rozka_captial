@@ -22,7 +22,7 @@ else
     echo -e "${RED}❌ Server is not running${NC}"
     echo ""
     echo "Please start the server first:"
-    echo "  cd /root/mekness"
+    echo "  cd /root/rozka_captial"
     echo "  npm install  # if not done"
     echo "  npm run dev"
     echo ""

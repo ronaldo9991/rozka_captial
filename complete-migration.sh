@@ -52,7 +52,7 @@ fi
 
 echo ""
 echo "📋 Step 5: Restarting server..."
-pm2 restart mekness-api
+pm2 restart rozka-api
 
 echo ""
 echo "✅ Migration Complete!"
@@ -64,7 +64,7 @@ echo "   - All data migrated"
 echo "   - Server restarted with AWS RDS"
 echo ""
 echo "🔍 Verify:"
-echo "   pm2 logs mekness-api --lines 20"
+echo "   pm2 logs rozka-api --lines 20"
 echo "   You should see: '✅ PostgreSQL connection successful'"
 
 

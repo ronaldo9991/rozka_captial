@@ -6,3 +6,5 @@ vite.config.ts.*
 .local/
 .env
 WEB3_REFINEMENT_SUMMARY.md
+logs/*.log
+dev-server-output.txt

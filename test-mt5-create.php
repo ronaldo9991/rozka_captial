@@ -31,13 +31,13 @@ try {
     $user = new MTUser();
     $user->Login = 0; // Auto-assign login
     $user->Rights = 0x1E3;
-    $user->Group = 'Mekness-Standard';
+    $user->Group = getenv('MT5_TEST_GROUP') ?: 'Rozka-Standard';
     $user->Name = 'Test User';
     $user->Email = 'test@example.com';
     $user->Leverage = 100;
     $user->Balance = 0;
     $user->Credit = 0;
-    $user->Company = 'Mekness';
+    $user->Company = 'Rozka Capitals';
     $user->Language = 1033;
     $user->Color = 0xFF000000;
     $user->Status = 'Enabled';

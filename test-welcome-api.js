@@ -19,7 +19,7 @@ console.log('   1. The logo will be used automatically when users sign up');
 console.log('   2. Or use admin endpoint: POST /api/admin/send-welcome-emails');
 console.log('');
 console.log('✅ Configuration complete!');
-console.log('   All Mekness emails will now use ROZKA.png');
+console.log('   Welcome emails use ROZKA.png');
 
 
 

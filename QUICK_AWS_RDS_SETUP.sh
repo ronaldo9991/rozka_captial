@@ -37,7 +37,7 @@ echo "4. Push schema:"
 echo "   DATABASE_URL=\"${DATABASE_URL}\" npm run db:push"
 echo ""
 echo "5. Restart server:"
-echo "   pm2 restart mekness-api"
+echo "   pm2 restart rozka-api"
 echo ""
 
 

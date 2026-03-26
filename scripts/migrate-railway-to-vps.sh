@@ -22,8 +22,8 @@ if [ -z "$VPS_DATABASE_URL" ]; then
     read -p "Database user: " VPS_USER
     read -sp "Database password: " VPS_PASSWORD
     echo ""
-    read -p "Database name [mekness_db]: " VPS_DB
-    VPS_DB=${VPS_DB:-mekness_db}
+    read -p "Database name [rozka_db]: " VPS_DB
+    VPS_DB=${VPS_DB:-rozka_db}
     VPS_DATABASE_URL="postgresql://$VPS_USER:$VPS_PASSWORD@localhost:5432/$VPS_DB"
 fi
 

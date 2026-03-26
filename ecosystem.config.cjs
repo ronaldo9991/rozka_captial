@@ -1,40 +1,43 @@
+/**
+ * PM2 config for Rozka Capitals production.
+ * Set secrets and URLs in the shell environment (or a .env loaded before `pm2 start`).
+ * Do not commit real credentials.
+ */
+const appRoot = process.env.APP_ROOT || '/root/rozka_captial';
+
 module.exports = {
   apps: [{
-    name: 'mekness-api',
+    name: 'rozka-api',
     script: './dist/index.js',
-    cwd: '/root/mekness',
+    cwd: appRoot,
     instances: 1,
     exec_mode: 'fork',
     env: {
       NODE_ENV: 'production',
-      PORT: 5000,
-      FRONTEND_URL: 'https://new.mekness.com',
-      API_URL: 'https://new.mekness.com/api',
-      DATABASE_URL: 'postgresql://postgres:YxscShUJpmgzIAvcjnVVkYeWZpPKUkKt@shuttle.proxy.rlwy.net:23811/railway',
-      MYFATOORAH_API_KEY: 'yIEC-qPztpBvzvB3LD5VqqO4PmImAbC6yZZ9BgPgzdn8Qmb_pGKH-0KHuAaUvyGKLY0rgwIC1jCE9OkQcdpN4VKqqbcOq7APvbRPHpL7Q8ytlbcP8Ma6Bgv9rfxELVKR-EAS_pQCDz6lnUvRymJEdtd0WNFOpFdQtcluO8n8uVZbOIQBn8zTKCkLIQ-raGd8NQ3isuH-Ttyn4htZrHi1YIdDtqFsLDXO0_0Zyj9SmmZP_WxPmD9pEDMEkMJ3vxHyeuF-Vf4p3zHx44D3T0amfDZTvduR1PDzlER6eN0OcixUAQm3oppt0AurejDgE95iZU81uqOCZaQC1ghs6KsUyuKvXwuLobQDiUnAq9FikwJRNiUH889afkkcK0beat-oLJhDFHNxllSzLmKFV4z_AIAhMXxIkU_15Z0uC9_rfglaJgUhl9EF_xbXqYnh3aLwj60iGaaZPkGs8t5tlq_8F8zTVKGNQVz4CD-6YTdjNCWmDgH0MOX4XtjgfAofSbBJaMOqC8DIymKjsUakHvV1PV6nx4UrEmnB3XrgY4HOgjJtTDLGzIx1GZH3SMBK8cN8MIcfDO8DTJx1pgHV3syp6_Ejvwx28AguLixnm2xDAzyii8hWPWIH6emSzGOlc2YEF7CHgalWG-WG7XrXukDYTRYc4ITFpoYrMQPGwQQqHxPUDAJnBbgba4qyBWVFI0XHvwa-sg',
-      MYFATOORAH_COUNTRY_CODE: 'USA',
-      MYFATOORAH_TEST_MODE: 'false',
-      // MT5 Integration - Live Server (Production)
-      // NOTE: Manager 10010 can connect but needs "Add users" permission enabled by MT5 admin
-      MT5_ENABLED: 'true',
-      MT5_SERVER_IP: '192.109.17.202',
-      MT5_SERVER_PORT: '443',
-      MT5_SERVER_WEB_LOGIN: '10010',
-      MT5_SERVER_WEB_PASSWORD: 'Z!Lk3vDl',
-      MT5_GROUP_LIVE: 'real\\Mekness-Standard', // Correct group name from MT5 server
-      // MT5 Integration - Demo Server
-      MT5_SERVER_IP_DEMO: '192.109.17.202',
-      MT5_SERVER_PORT_DEMO: '443',
-      MT5_SERVER_WEB_LOGIN_DEMO: '10010',
-      MT5_SERVER_WEB_PASSWORD_DEMO: 'Z!Lk3vDl',
-      MT5_GROUP_DEMO: 'demo\\Mekness_Demo', // Correct group name from MT5 server
-      // Email Configuration (Mailgun)
-      SMTP_SERVER: 'smtp.eu.mailgun.org',
-      SMTP_PORT: '587',
-      SMTP_LOGIN: 'accounts@mg.mekness.com',
-      SMTP_PASSWORD: 'i1KlRqiM7pCVvb7',
-      SMTP_FROM: 'accounts@mg.mekness.com',
-      SMTP_FROM_NAME: 'Mekness'
+      PORT: process.env.PORT || '5000',
+      FRONTEND_URL: process.env.FRONTEND_URL || 'https://rozkacapitals.com',
+      API_URL: process.env.API_URL || 'https://rozkacapitals.com/api',
+      DATABASE_URL: process.env.DATABASE_URL,
+      MYFATOORAH_API_KEY: process.env.MYFATOORAH_API_KEY,
+      MYFATOORAH_COUNTRY_CODE: process.env.MYFATOORAH_COUNTRY_CODE,
+      MYFATOORAH_TEST_MODE: process.env.MYFATOORAH_TEST_MODE,
+      MT5_ENABLED: process.env.MT5_ENABLED,
+      MT5_SERVER_IP: process.env.MT5_SERVER_IP,
+      MT5_SERVER_PORT: process.env.MT5_SERVER_PORT,
+      MT5_SERVER_WEB_LOGIN: process.env.MT5_SERVER_WEB_LOGIN,
+      MT5_SERVER_WEB_PASSWORD: process.env.MT5_SERVER_WEB_PASSWORD,
+      MT5_GROUP_LIVE: process.env.MT5_GROUP_LIVE,
+      MT5_SERVER_IP_DEMO: process.env.MT5_SERVER_IP_DEMO,
+      MT5_SERVER_PORT_DEMO: process.env.MT5_SERVER_PORT_DEMO,
+      MT5_SERVER_WEB_LOGIN_DEMO: process.env.MT5_SERVER_WEB_LOGIN_DEMO,
+      MT5_SERVER_WEB_PASSWORD_DEMO: process.env.MT5_SERVER_WEB_PASSWORD_DEMO,
+      MT5_GROUP_DEMO: process.env.MT5_GROUP_DEMO,
+      SMTP_SERVER: process.env.SMTP_SERVER,
+      SMTP_PORT: process.env.SMTP_PORT,
+      SMTP_LOGIN: process.env.SMTP_LOGIN,
+      SMTP_PASSWORD: process.env.SMTP_PASSWORD,
+      SMTP_FROM: process.env.SMTP_FROM,
+      SMTP_FROM_NAME: process.env.SMTP_FROM_NAME || 'Rozka Capitals',
     },
     error_file: './logs/pm2-error.log',
     out_file: './logs/pm2-out.log',
@@ -42,7 +45,6 @@ module.exports = {
     merge_logs: true,
     autorestart: true,
     watch: false,
-    max_memory_restart: '1G'
-  }]
+    max_memory_restart: '1G',
+  }],
 };
-

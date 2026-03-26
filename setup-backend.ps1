@@ -1,7 +1,7 @@
 # Backend Setup Script for Windows PowerShell
 # This script helps you set up the .env file for the backend
 
-Write-Host "=== Mekness Backend Setup ===" -ForegroundColor Cyan
+Write-Host "=== Rozka Capitals Backend Setup ===" -ForegroundColor Cyan
 Write-Host ""
 
 # Check if .env already exists
@@ -48,8 +48,8 @@ switch ($choice) {
             [Runtime.InteropServices.Marshal]::SecureStringToBSTR($dbPassword)
         )
         
-        $dbName = Read-Host "Database name (default: mekness_db)"
-        if ([string]::IsNullOrWhiteSpace($dbName)) { $dbName = "mekness_db" }
+        $dbName = Read-Host "Database name (default: rozka_db)"
+        if ([string]::IsNullOrWhiteSpace($dbName)) { $dbName = "rozka_db" }
         
         $dbHost = Read-Host "Database host (default: localhost)"
         if ([string]::IsNullOrWhiteSpace($dbHost)) { $dbHost = "localhost" }

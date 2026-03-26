@@ -1,5 +1,5 @@
 #!/bin/bash
-# PostgreSQL Setup Script for Mekness Platform on VPS
+# PostgreSQL setup for Rozka Capitals on VPS
 
 set -e  # Exit on error
 
@@ -80,8 +80,8 @@ fi
 
 # Generate secure password
 DB_PASSWORD=$(openssl rand -base64 32 | tr -d "=+/" | cut -c1-25)
-DB_USER="mekness_user"
-DB_NAME="mekness_db"
+DB_USER="rozka_user"
+DB_NAME="rozka_db"
 
 echo ""
 echo -e "${GREEN}📊 Creating database and user...${NC}"

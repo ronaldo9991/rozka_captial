@@ -11,16 +11,21 @@ const SMTP_CONFIG = {
   port: parseInt(process.env.SMTP_PORT || '587'),
   secure: false,
   auth: {
-    user: process.env.SMTP_LOGIN || 'accounts@mg.mekness.com',
-    pass: process.env.SMTP_PASSWORD || 'i1KlRqiM7pCVvb7',
+    user: process.env.SMTP_LOGIN,
+    pass: process.env.SMTP_PASSWORD,
   },
   tls: {
     rejectUnauthorized: false,
   },
 };
 
-const FROM_EMAIL = process.env.SMTP_FROM || 'accounts@mg.mekness.com';
-const FROM_NAME = process.env.SMTP_FROM_NAME || 'Mekness';
+const FROM_EMAIL = process.env.SMTP_FROM || 'support@rozkacapitals.com';
+const FROM_NAME = process.env.SMTP_FROM_NAME || 'Rozka Capitals';
+
+if (!process.env.SMTP_LOGIN || !process.env.SMTP_PASSWORD) {
+  console.error('Set SMTP_LOGIN and SMTP_PASSWORD in the environment.');
+  process.exit(1);
+}
 
 console.log('📧 Testing Mailgun Email Configuration...\n');
 console.log('SMTP Server:', SMTP_CONFIG.host);
@@ -46,8 +51,8 @@ transporter.verify((error, success) => {
     const testEmail = {
       from: `"${FROM_NAME}" <${FROM_EMAIL}>`,
       to: 'test@example.com', // Change this to your email for actual test
-      subject: 'Test Email from Mekness',
-      html: '<h1>Test Email</h1><p>This is a test email from Mekness integration test.</p>',
+      subject: 'Test Email from Rozka Capitals',
+      html: '<h1>Test Email</h1><p>This is a test email from Rozka Capitals integration test.</p>',
     };
     
     transporter.sendMail(testEmail, (err, info) => {

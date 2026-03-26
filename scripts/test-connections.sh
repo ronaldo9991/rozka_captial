@@ -1,7 +1,7 @@
 #!/bin/bash
-# Quick connection test script for Mekness Platform
+# Quick connection test script for Rozka Capitals
 
-echo "🚀 Mekness Platform - Connection Test"
+echo "🚀 Rozka Capitals - Connection Test"
 echo "======================================"
 echo ""
 

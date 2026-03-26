@@ -18,7 +18,7 @@ try {
     echo "✅ Connected!\n\n";
     
     // Try to get a specific group
-    $testGroups = ['Mekness-Standard', 'Standard', 'demo', 'Demo', 'real', 'Real', 'default', 'Default'];
+    $testGroups = ['Rozka-Standard', 'Standard', 'demo', 'Demo', 'real', 'Real', 'default', 'Default'];
     
     foreach ($testGroups as $groupName) {
         $group = null;
